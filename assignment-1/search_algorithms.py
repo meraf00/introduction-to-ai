@@ -2,49 +2,78 @@ from collections import deque, defaultdict
 from heapq import heappop, heappush
 
 
-def depth_first_search(graph, start_node, end_node):    
-    stack = [(start_node, [start_node])]
+def build_path(path_map: dict, start_node, end_node):    
+    path = []
+        
+    current = end_node
+    while True:
+        path.append(current)
+
+        if current == start_node:
+            break
+
+        current = path_map[current]
+    
+    path.reverse()
+
+    return path
+    
+
+
+
+def depth_first_search(graph, start_node, end_node): 
+    path_map = {}
+
+    stack = [start_node]
 
     visited = set()
 
     while stack:
-        current_node, path = stack.pop()
+        current_node = stack.pop()
 
         if current_node == end_node:
-            return path
+            return build_path(path_map, start_node, end_node)
 
         visited.add(current_node)
 
         for neighbour, _ in graph.neighbours(current_node):
             if neighbour not in visited:
-                stack.append((neighbour, path[:] + [neighbour]))
+                stack.append(neighbour)
+                path_map[neighbour] = current_node
 
     return []
 
-
+ 
 def breadth_first_search(graph, start_node, end_node):
-    queue = deque([(start_node, [start_node])])
+    path_map = {}
+    path_cost = {}
+
+    queue = deque([(0, start_node)])
 
     visited = set()
 
     while queue:
-        current_node, path = queue.popleft()
+        cost, current_node = queue.popleft()
 
         if current_node == end_node:
-            return path
+            return build_path(path_map, start_node, end_node)
 
         visited.add(current_node)
 
         for neighbour, _ in graph.neighbours(current_node):
             if neighbour not in visited:
-                queue.append((neighbour, path[:] + [neighbour]))
+                queue.append((cost + 1, neighbour))
+                
+                if path_cost.get(neighbour, float("inf")) > cost + 1:
+                    path_map[neighbour] = current_node
+                    path_cost[neighbour] = cost + 1
 
     return []
 
 
 def uniform_cost_search(graph, start_node, end_node):
-    paths = defaultdict(list)
-    paths[start_node].append(start_node)
+    path_map = {}
+    path_cost = {}
 
     priority_queue = [(0, start_node)]
 
@@ -54,14 +83,17 @@ def uniform_cost_search(graph, start_node, end_node):
         cost, current_node = heappop(priority_queue)
 
         if current_node == end_node:
-            return paths[current_node]
+            return build_path(path_map, start_node, end_node)
 
         visited.add(current_node)
 
         for neighbour, weight in graph.neighbours(current_node):
             if neighbour not in visited:
                 heappush(priority_queue, (cost + weight, neighbour))
-                paths[neighbour] = paths[current_node][:] + [neighbour]
+
+                if path_cost.get(neighbour, float("inf")) > cost + weight:
+                    path_map[neighbour] = current_node
+                    path_cost[neighbour] = cost + weight
 
     return []
 
@@ -152,9 +184,8 @@ def a_star(graph, start_node, end_node, heuristic_func):
     # alias
     h = heuristic_func
 
-    paths = defaultdict(list)
-
-    paths[start_node].append(start_node)
+    path_map = {}
+    path_cost = {}
 
     priority_queue = [(h(start_node), start_node)]
 
@@ -168,7 +199,7 @@ def a_star(graph, start_node, end_node, heuristic_func):
         current_incurred_cost = est_total_cost - h(current_node)
 
         if current_node == end_node:
-            return paths[current_node]
+            return build_path(path_map, start_node, end_node)
 
         visited.add(current_node)
 
@@ -181,6 +212,8 @@ def a_star(graph, start_node, end_node, heuristic_func):
 
                 heappush(priority_queue, (neighbour_est_total_cost, neighbour))
 
-                paths[neighbour] = paths[current_node][:] + [neighbour]
+                if path_cost.get(neighbour, float("inf")) > neighbour_est_total_cost:
+                    path_map[neighbour] = current_node
+                    path_cost[neighbour] = neighbour_est_total_cost
 
     return []
