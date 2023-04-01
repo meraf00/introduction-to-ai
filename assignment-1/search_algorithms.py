@@ -19,8 +19,6 @@ def build_path(path_map: dict, start_node, end_node):
     return path
     
 
-
-
 def depth_first_search(graph, start_node, end_node): 
     path_map = {}
 
