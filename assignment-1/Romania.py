@@ -1,9 +1,9 @@
 from Graph import UndirectedGraph
 from search_algorithms import (
-    a_star,
+    a_star_search,
     depth_first_search,
     breadth_first_search,
-    greedy,
+    greedy_search,
     uniform_cost_search,
     depth_limited_search,
     iterative_deepening
@@ -38,31 +38,31 @@ road_map.add_edge("Iasi", "Neamt", 87)
 
 
 def h_straight_line_distance(node):
-        # straight line distance from node to Bucharest
-        distances = {
-            "Oradea":  380,
-            "Zerind":  374,
-            "Sibiu": 253,
-            "Arad":  366,
-            "Timisoara":  329,
-            "Rimnicu Vilcea":  193,
-            "Fagaras":  176,
-            "Lugoj":  244,
-            "Bucharest":  0,
-            "Pitesti":  100,
-            "Craiova": 160,
-            "Mehadia":  241,
-            "Drobeta":  242,
-            "Giurgiu":  77,
-            "Urziceni":  80,
-            "Hirsova":  151,
-            "Eforie":  161,
-            "Vaslui": 199,
-            "Iasi":  226,
-            "Neamt": 234
-        }
+    # straight line distance from node to Bucharest
+    distances = {
+        "Oradea":  380,
+        "Zerind":  374,
+        "Sibiu": 253,
+        "Arad":  366,
+        "Timisoara":  329,
+        "Rimnicu Vilcea":  193,
+        "Fagaras":  176,
+        "Lugoj":  244,
+        "Bucharest":  0,
+        "Pitesti":  100,
+        "Craiova": 160,
+        "Mehadia":  241,
+        "Drobeta":  242,
+        "Giurgiu":  77,
+        "Urziceni":  80,
+        "Hirsova":  151,
+        "Eforie":  161,
+        "Vaslui": 199,
+        "Iasi":  226,
+        "Neamt": 234
+    }
 
-        return distances[node]
+    return distances[node]
 
 
 if __name__ == "__main__":
@@ -72,7 +72,6 @@ if __name__ == "__main__":
 
     for k, v in road_map._graph.items():
         print(f"{k}, Degree: {len(v)}, {[v for n,  v in v]}")
-
 
     print("<<<<<<<<<<<<<<<< Depth first search >>>>>>>>>>>>>")
     path = depth_first_search(road_map, "Arad", "Arad")
@@ -84,7 +83,6 @@ if __name__ == "__main__":
     path = depth_first_search(road_map, "Arad", "Neamt")
     print(path)
 
-
     print("<<<<<<<<<<<<<<<< Breadth first search >>>>>>>>>>>>>")
     path = breadth_first_search(road_map, "Arad", "Arad")
     print(path)
@@ -94,7 +92,6 @@ if __name__ == "__main__":
     print(path)
     path = breadth_first_search(road_map, "Arad", "Neamt")
     print(path)
-
 
     print("<<<<<<<<<<<<<<<< Uniform cost search >>>>>>>>>>>>>")
     path = uniform_cost_search(road_map, "Arad", "Arad")
@@ -106,7 +103,6 @@ if __name__ == "__main__":
     path = uniform_cost_search(road_map, "Arad", "Neamt")
     print(path)
 
-
     print("<<<<<<<<<<<<<<<< Depth limited search >>>>>>>>>>>>>")
     path = depth_limited_search(road_map, "Arad", "Arad")
     print(path)
@@ -116,7 +112,6 @@ if __name__ == "__main__":
     print(path)
     path = depth_limited_search(road_map, "Arad", "Arad", 0)
     print(path)
-
 
     print("<<<<<<<<<<<<<<<< Iterative deepening >>>>>>>>>>>>>")
     path = iterative_deepening(road_map, "Arad", "Arad")
@@ -128,24 +123,29 @@ if __name__ == "__main__":
     path = iterative_deepening(road_map, "Arad", "Neamt")
     print(path)
 
-    
     print("<<<<<<<<<<<<<<<< Greedy >>>>>>>>>>>>>")
-    path = greedy(road_map, "Arad", "Bucharest", h_straight_line_distance)
+    path = greedy_search(road_map, "Arad", "Bucharest",
+                         h_straight_line_distance)
     print(path)
-    path = greedy(road_map, "Craiova", "Bucharest", h_straight_line_distance)
+    path = greedy_search(road_map, "Craiova", "Bucharest",
+                         h_straight_line_distance)
     print(path)
-
 
     print("<<<<<<<<<<<<<<<< A star search >>>>>>>>>>>>>")
-    path = a_star(road_map, "Arad", "Bucharest", h_straight_line_distance)
+    path = a_star_search(road_map, "Arad", "Bucharest",
+                         h_straight_line_distance)
     print(path)
-    path = a_star(road_map, "Craiova", "Bucharest", h_straight_line_distance)
+    path = a_star_search(road_map, "Craiova", "Bucharest",
+                         h_straight_line_distance)
     print(path)
-    path = a_star(road_map, "Neamt", "Bucharest", h_straight_line_distance)
+    path = a_star_search(road_map, "Neamt", "Bucharest",
+                         h_straight_line_distance)
     print(path)
-    path = a_star(road_map, "Pitesti", "Bucharest", h_straight_line_distance)
+    path = a_star_search(road_map, "Pitesti", "Bucharest",
+                         h_straight_line_distance)
     print(path)
-    path = a_star(road_map, "Bucharest", "Bucharest", h_straight_line_distance)
+    path = a_star_search(road_map, "Bucharest",
+                         "Bucharest", h_straight_line_distance)
     print(path)
 
     print("<<<<<<<<<<<<<<<< Uniform cost search to Bucharest >>>>>>>>>>>>>")

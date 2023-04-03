@@ -83,7 +83,7 @@ class DirectedGraph:
 
     def neighbours(self, node: Hashable) -> ReadOnly:
         """Returns ReadOnly list containing neighbours of node"""
-
+        
         return ReadOnly(self._graph[node])
 
     def __str__(self) -> str:
