@@ -1,7 +1,7 @@
 from collections import deque
 from heapq import heappop, heappush
 
-
+    
 def build_path(path_map: dict, start_node, end_node):
     path = []
 
@@ -70,7 +70,7 @@ def breadth_first_search(graph, start_node, end_node):
 
 
 def uniform_cost_search(graph, start_node, end_node):
-    path_map = {}
+    path_map = {}  
     path_cost = {}
 
     priority_queue = [(0, start_node)]
