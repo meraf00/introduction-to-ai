@@ -1,4 +1,4 @@
-from graph import eigenvector_centrality, katz_centrality, UndirectedGraph, DirectedGraph
+from graph import *
 
 graph = UndirectedGraph()
 graph.add_edge(1, 2)
@@ -9,7 +9,23 @@ graph.add_edge(4, 6)
 graph.add_edge(4, 5)
 graph.add_edge(5, 6)
 print(eigenvector_centrality(graph))
+print(">> close", closeness_centrality(graph))
+print(">> betwe", betweeness_centrality(graph))
 
+
+gb = UndirectedGraph()
+gb.add_edge(1, 3)
+gb.add_edge(2, 3)
+gb.add_edge(3, 4)
+gb.add_edge(4, 5)
+gb.add_edge(5, 6)
+gb.add_edge(6, 7)
+gb.add_edge(5, 7)
+print("........................")
+print(">> betwe!", betweeness_centrality(gb))
+print(">> deg!", degree_centrality(gb))
+print(">> clos!", closeness_centrality(gb))
+print("........................")
 
 graph = DirectedGraph()
 graph.add_edge(1, 2)
@@ -20,6 +36,8 @@ graph.add_edge(4, 5)
 graph.add_edge(5, 6)
 graph.add_edge(6, 3)
 
+print(">>", closeness_centrality(graph))
+print(">>", betweeness_centrality(graph))
 print(eigenvector_centrality(graph))
 print(katz_centrality(graph))
 for v in katz_centrality(graph, alpha=0.5).values():
