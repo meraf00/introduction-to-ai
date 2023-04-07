@@ -40,6 +40,8 @@ road_map.add_edge("Urziceni", "Vaslui", 142)
 road_map.add_edge("Vaslui", "Iasi", 92)
 road_map.add_edge("Iasi", "Neamt", 87)
 
+print(road_map)
+
 
 def h_longitude_latitude_distance(node1, node2):
     long_lat = {
@@ -69,8 +71,9 @@ def h_longitude_latitude_distance(node1, node2):
     lat2, lon2 = map(radians, long_lat[node2])
 
     # return acos(sin(lat1)*sin(lat2)+cos(lat1)*cos(lat2)*cos(lon2-lon1))*6371
-    a = 0.5 - cos((lat2-lat1))/2 + cos(lat1) * cos(lat2) * (1-cos((lon2-lon1)))/2
-    return 12742 * asin(sqrt(a)) #2*R*asin...
+    a = 0.5 - cos((lat2-lat1))/2 + cos(lat1) * \
+        cos(lat2) * (1-cos((lon2-lon1)))/2
+    return 12742 * asin(sqrt(a))  # 2*R*asin...
 
 
 def h_straight_line_distance_to_bucharest(node):
@@ -184,10 +187,11 @@ if __name__ == "__main__":
                          "Bucharest", h_straight_line_distance_to_bucharest)
     print(path)
 
-    bucharest_long_lat = partial(h_longitude_latitude_distance, "Bucharest")    
+    bucharest_long_lat = partial(h_longitude_latitude_distance, "Bucharest")
 
-    print(sorted([(bucharest_long_lat(node), h_straight_line_distance_to_bucharest(node), node) for node in road_map.nodes]))
-    
+    print(sorted([(bucharest_long_lat(node), h_straight_line_distance_to_bucharest(
+        node), node) for node in road_map.nodes]))
+
     print("<<<<<<<<<<<<<<<< A star search [long-lat]>>>>>>>>>>>>>")
     path = a_star_search(road_map, "Arad", "Bucharest",
                          bucharest_long_lat)
