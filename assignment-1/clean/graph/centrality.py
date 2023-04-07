@@ -29,12 +29,15 @@ def degree_centrality(graph):
     number_of_nodes = len(graph)
 
     for node in graph.nodes:
-        degree_centrality[node] = len(graph.neighbours(node)) / number_of_nodes
+        degree_centrality[node] = len(
+            graph.neighbours(node)) / (number_of_nodes - 1)
 
     return degree_centrality
 
 
 def closeness_centrality(graph):
+    number_of_nodes = len(graph)
+
     closeness_centrality = {}
 
     for node in graph.nodes:
@@ -46,7 +49,7 @@ def closeness_centrality(graph):
                 shortest_path = uniform_cost_search(graph, node, other_node)
                 path_cost_sum += get_path_cost(graph, shortest_path)
 
-        closeness_centrality[node] = (len(graph.nodes) - 1) / path_cost_sum
+        closeness_centrality[node] = (number_of_nodes - 1) / path_cost_sum
 
     return closeness_centrality
 
@@ -54,14 +57,21 @@ def closeness_centrality(graph):
 def betweeness_centrality(graph):
     betweeness_centrality = {}
 
+    number_of_nodes = len(graph)
+
+    scale = 2 / ((number_of_nodes - 1) * (number_of_nodes - 2))
+
     for node in graph.nodes:
-        betweeness_centrality[node] = node_betweeness_centrality(graph, node)
+        betweeness_centrality[node] = node_betweeness_centrality(
+            graph, node) * scale
 
     return betweeness_centrality
 
 
 # betweeness centrality helper
 def node_betweeness_centrality(graph, target_node):
+    # target_node is the intercepting node
+
     betweeness = 0
 
     for start_node in graph.nodes:
@@ -79,10 +89,9 @@ def node_betweeness_centrality(graph, target_node):
 
             short_paths_from_s_to_d_containing_target = 0
 
-            for paths in shortest_paths.values():
-                for path in paths:
-                    if target_node in path:
-                        short_paths_from_s_to_d_containing_target += 1
+            for path in shortest_paths[dest_node]:
+                if target_node in path:
+                    short_paths_from_s_to_d_containing_target += 1
 
             betweeness += short_paths_from_s_to_d_containing_target / \
                 total_shortest_path_from_s_to_d_paths
