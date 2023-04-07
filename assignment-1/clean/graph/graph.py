@@ -47,7 +47,7 @@ class DirectedGraph:
 
         self._graph[node] = []
 
-    def add_edge(self, node_1: Hashable, node_2: Hashable, weight: float = 0) -> None:
+    def add_edge(self, node_1: Hashable, node_2: Hashable, weight: float = 1) -> None:
         """"Add weighted directed edge from node_1 to node_2
 
         Creates node if the nodes does not exist.
@@ -102,7 +102,7 @@ class UndirectedGraph(DirectedGraph):
     def __init__(self):
         super().__init__()
 
-    def add_edge(self, node_1: Hashable, node_2: Hashable, weight: float = 0) -> None:
+    def add_edge(self, node_1: Hashable, node_2: Hashable, weight: float = 1) -> None:
         super().add_edge(node_1, node_2, weight)
         super().add_edge(node_2, node_1, weight)
 
