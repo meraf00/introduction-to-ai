@@ -145,3 +145,34 @@ def eigenvector_centrality(graph, max_iter=100, tolerance=1.0e-5):
 
         if sum(abs(iteration[n] - last_iter[n]) for n in iteration) < number_of_nodes * tolerance:
             return iteration
+
+
+def katz_centrality(graph, alpha=0.1, beta=1.0, max_iter=100, tolerance=1.0e-5):
+    iteration = {v: 0 for v in graph.nodes}
+
+    number_of_nodes = len(graph)
+
+    for _ in range(max_iter):
+        last_iter = iteration
+
+        iteration = dict.fromkeys(last_iter, 0)
+
+        for node in iteration:
+            for nbr, _ in graph.neighbours(node):
+                iteration[nbr] += last_iter[node]
+
+        for node in iteration:
+            iteration[node] = alpha * iteration[node] + beta
+
+        error = sum(abs(iteration[n] - last_iter[n]) for n in iteration)
+        if error < number_of_nodes * tolerance:
+            try:
+                s = 1.0 / math.hypot(*iteration.values())
+            except ZeroDivisionError:
+                s = 1.0
+
+            # normalize
+            for node in iteration:
+                iteration[node] *= s
+
+            return iteration
