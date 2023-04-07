@@ -93,6 +93,8 @@ class DirectedGraph:
         for node in self.nodes:
             yield node
 
+    def __len__(self):
+        return len(self._graph)
     __repr__ = __str__
 
 

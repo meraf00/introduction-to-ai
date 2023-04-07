@@ -1,7 +1,7 @@
 from collections import defaultdict
-from search_algorithms import uniform_cost_search
 from heapq import heappop, heappush
 import math
+from .search_algorithms import uniform_cost_search
 
 
 def get_path_cost(graph, path):
@@ -136,17 +136,12 @@ def eigenvector_centrality(graph, max_iter=100, tolerance=1.0e-5):
         iteration = last_iter.copy()
 
         for node in iteration:
-            for nbr in graph.neighbours(node):
+            for nbr, _ in graph.neighbours(node):
                 iteration[nbr] += last_iter[node]
 
-        # Normalize the vector. The normalization denominator `norm`
-        # should never be zero by the Perron--Frobenius
-        # theorem. However, in case it is due to numerical error, we
-        # assume the norm to be one instead.
         norm = math.hypot(*iteration.values()) or 1
         iteration = {node: centrality / norm for node,
                      centrality in iteration.items()}
 
-        # Check for convergence (in the L_1 norm).
         if sum(abs(iteration[n] - last_iter[n]) for n in iteration) < number_of_nodes * tolerance:
             return iteration
