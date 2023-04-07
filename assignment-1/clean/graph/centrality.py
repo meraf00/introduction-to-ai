@@ -26,8 +26,10 @@ def get_path_cost(graph, path):
 def degree_centrality(graph):
     degree_centrality = {}
 
+    number_of_nodes = len(graph)
+
     for node in graph.nodes:
-        degree_centrality[node] = len(graph.neighbours(node))
+        degree_centrality[node] = len(graph.neighbours(node)) / number_of_nodes
 
     return degree_centrality
 
@@ -58,6 +60,7 @@ def betweeness_centrality(graph):
     return betweeness_centrality
 
 
+# betweeness centrality helper
 def node_betweeness_centrality(graph, target_node):
     betweeness = 0
 
@@ -87,6 +90,7 @@ def node_betweeness_centrality(graph, target_node):
     return betweeness
 
 
+# betweeness centrality helper
 def find_best_paths_to_all_nodes(graph, start_node):
     paths = defaultdict(list)
     paths[start_node].append([start_node])
