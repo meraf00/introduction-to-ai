@@ -1,12 +1,18 @@
+import os
 import time
 import random
+from math import radians, cos, sqrt, asin
 from graph import *
 
 
-def load_coords(filename):
+def load_coords():
+    
+    romania_coord = os.path.join(os.path.dirname(
+        __file__), "romania-data/romania-coords.txt")
+    
     city_coords = {}
 
-    with open(filename) as file:
+    with open(romania_coord) as file:
         for line in file.readlines()[1:]:
             city, lat, long = line.split("    ")
             lat = float(lat)
@@ -17,10 +23,13 @@ def load_coords(filename):
     return city_coords
 
 
-def load_city_graph(filename, distance_unit="miles"):
+def load_city_graph(distance_unit="miles"):
+    romania_file = os.path.join(os.path.dirname(
+        __file__), "romania-data/romania-road-distance.txt")
+
     graph = UndirectedGraph()
 
-    with open(filename) as file:
+    with open(romania_file) as file:
         for line in file.readlines()[1:]:
             city_1, city_2, distance = line.split("    ")
 
@@ -32,6 +41,19 @@ def load_city_graph(filename, distance_unit="miles"):
             graph.add_edge(city_1, city_2, distance)
 
     return graph
+
+
+def romania_coord_distance_km(city_1, city_2):
+    """Returns the straight line distance in kilometers between two cities."""
+
+    coord = load_coords()
+
+    lat1, lon1 = map(radians, coord[city_1])
+    lat2, lon2 = map(radians, coord[city_2])
+
+    a = 0.5 - cos((lat2-lat1))/2 + cos(lat1) * \
+        cos(lat2) * (1-cos((lon2-lon1)))/2
+    return 12742 * asin(sqrt(a))  # 2*R*asin...
 
 
 def calculate_cost(graph, path):
