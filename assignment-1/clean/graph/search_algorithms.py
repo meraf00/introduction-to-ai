@@ -161,37 +161,37 @@ def greedy_search(graph, start_node, end_node, heuristic_func):
     estimated cost of path from `current_node` to `end_node`.
     """
 
-    # choose the best node from alternative (min of cost estimated by heuristic_func)
-    best_node = None
-    best_cost = float("inf")
+    # alias
+    h = heuristic_func
 
-    path = [start_node]
-    visited = set(path)
+    path_map = {}
+    path_cost = {}
 
-    current_node = start_node
+    priority_queue = [(h(start_node), start_node)]
 
-    while end_node not in visited:
+    visited = set()
+
+    while priority_queue:
+
+        _, current_node = heappop(priority_queue)
+
+        if current_node == end_node:
+            return build_path(path_map, start_node, end_node)
+
+        visited.add(current_node)
+        
         for neighbour, _ in graph.neighbours(current_node):
-            if neighbour in visited:
-                continue
+            neighbour_cost = h(neighbour)
 
-            estimated_cost = heuristic_func(neighbour)
+            if neighbour not in visited:
 
-            if estimated_cost < best_cost:
-                best_cost = estimated_cost
-                best_node = neighbour
+                heappush(priority_queue, (neighbour_cost, neighbour))
 
-        if not best_node or best_node in visited:
-            return []
+                if path_cost.get(neighbour, float("inf")) > h(neighbour):
+                    path_map[neighbour] = current_node
+                    path_cost[neighbour] = neighbour_cost
 
-        path.append(best_node)
-        visited.add(best_node)
-        current_node = best_node
-
-    if path and path[-1] != end_node:
-        return []
-
-    return path
+    return []
 
 
 def a_star_search(graph, start_node, end_node, heuristic_func):
