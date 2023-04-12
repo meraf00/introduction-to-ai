@@ -6,10 +6,10 @@ from graph import *
 
 
 def load_coords():
-    
+
     romania_coord = os.path.join(os.path.dirname(
         __file__), "romania-data/romania-coords.txt")
-    
+
     city_coords = {}
 
     with open(romania_coord) as file:
@@ -126,7 +126,6 @@ def generate_heuristic_function(graph, goal_node, estimation_error: float = 0.2)
 
     estimations = {}
 
-    i = j = 0
     nodes = graph.nodes
 
     random.seed(time.time())
@@ -160,7 +159,9 @@ def benchmark(algorithm, args, run_n_times=10):
         run_n_times (int): number of times to run the algorithm
 
     Return:
-        float : mean_run_time of algorithm        
+        tuple(float, int) : 
+            mean_run_time   - average running time of algorithm        
+            solution_length - path length
     """
 
     mean_run_time = 0
