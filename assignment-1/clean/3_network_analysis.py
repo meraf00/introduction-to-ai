@@ -27,7 +27,7 @@ romania_file = os.path.join(os.path.dirname(
 romania_map = utils.load_city_graph(romania_file)
 
 centralities = compute_centralities(romania_map)
-
+ 
 with open("output.csv", "w") as f:
     f.write("Algorithm,")
     f.write(",".join([city for city in romania_map.nodes]))

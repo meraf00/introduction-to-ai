@@ -24,7 +24,8 @@ algorithms[5] = a_star_search
 
 
 
-with open('result.txt', 'w') as res:
+with open('result.csv', 'w') as res:
+    res.write("Algorithm,City One,City Two,Average Time,Path Length\n")
     
     for idx1 in range(len(selected_cities)):
         for idx2 in range(idx1 + 1, len(selected_cities)):
@@ -41,7 +42,9 @@ with open('result.txt', 'w') as res:
                 if i >= 4:
                     args['heuristic_func'] = lambda node: h_longitude_latitude_distance(node, city_two)
 
-                res.write(f'City One: {city_one} City Two: {city_two} Algorithm: {algorithms[i].__name__} Average Time: {benchmark(algorithm=algorithms[i],args=args)} \n')
+                benchmark_result = benchmark(algorithm=algorithms[i],args=args)
+
+                res.write(f'{algorithms[i].__name__},{city_one},{city_two},{benchmark_result[0]},{benchmark_result[1]}\n')
 
 
     res.close()

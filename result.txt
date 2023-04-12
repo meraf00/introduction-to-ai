@@ -1,270 +1,271 @@
-City One: Vaslui City Two: Sibiu Algorithm: breadth_first_search Average Time: (2.9569999242085032e-05, 5) 
-City One: Vaslui City Two: Sibiu Algorithm: depth_first_search Average Time: (2.4399999529123306e-05, 11) 
-City One: Vaslui City Two: Sibiu Algorithm: uniform_cost_search Average Time: (2.7569999656407162e-05, 6) 
-City One: Vaslui City Two: Sibiu Algorithm: iterative_deepening Average Time: (4.810999962501228e-05, 5) 
-City One: Vaslui City Two: Sibiu Algorithm: greedy_search Average Time: (4.766000056406483e-05, 5) 
-City One: Vaslui City Two: Sibiu Algorithm: a_star_search Average Time: (0.00013105000070936512, 6) 
-City One: Vaslui City Two: Rimnicu Vilcea Algorithm: breadth_first_search Average Time: (2.296999991813209e-05, 5) 
-City One: Vaslui City Two: Rimnicu Vilcea Algorithm: depth_first_search Average Time: (2.5459998869337142e-05, 12) 
-City One: Vaslui City Two: Rimnicu Vilcea Algorithm: uniform_cost_search Average Time: (1.9180000526830555e-05, 5) 
-City One: Vaslui City Two: Rimnicu Vilcea Algorithm: iterative_deepening Average Time: (3.2900000223889944e-05, 5) 
-City One: Vaslui City Two: Rimnicu Vilcea Algorithm: greedy_search Average Time: (4.66799992864253e-05, 5) 
-City One: Vaslui City Two: Rimnicu Vilcea Algorithm: a_star_search Average Time: (8.009000011952594e-05, 5) 
-City One: Vaslui City Two: Urziceni Algorithm: breadth_first_search Average Time: (4.289998832973651e-06, 2) 
-City One: Vaslui City Two: Urziceni Algorithm: depth_first_search Average Time: (4.3099993490614e-06, 2) 
-City One: Vaslui City Two: Urziceni Algorithm: uniform_cost_search Average Time: (5.2700001106131825e-06, 2) 
-City One: Vaslui City Two: Urziceni Algorithm: iterative_deepening Average Time: (5.440000677481294e-06, 2) 
-City One: Vaslui City Two: Urziceni Algorithm: greedy_search Average Time: (1.2089998926967383e-05, 2) 
-City One: Vaslui City Two: Urziceni Algorithm: a_star_search Average Time: (2.6389999766252005e-05, 2) 
-City One: Vaslui City Two: Pitesti Algorithm: breadth_first_search Average Time: (1.4919999739504419e-05, 4) 
-City One: Vaslui City Two: Pitesti Algorithm: depth_first_search Average Time: (1.0380000458098947e-05, 4) 
-City One: Vaslui City Two: Pitesti Algorithm: uniform_cost_search Average Time: (1.596999973116908e-05, 4) 
-City One: Vaslui City Two: Pitesti Algorithm: iterative_deepening Average Time: (2.9019999419688248e-05, 4) 
-City One: Vaslui City Two: Pitesti Algorithm: greedy_search Average Time: (6.946000030438881e-05, 4) 
-City One: Vaslui City Two: Pitesti Algorithm: a_star_search Average Time: (6.68499997118488e-05, 4) 
-City One: Vaslui City Two: Drobeta Algorithm: breadth_first_search Average Time: (3.255000083299819e-05, 6) 
-City One: Vaslui City Two: Drobeta Algorithm: depth_first_search Average Time: (1.480999999330379e-05, 6) 
-City One: Vaslui City Two: Drobeta Algorithm: uniform_cost_search Average Time: (4.482000040297862e-05, 6) 
-City One: Vaslui City Two: Drobeta Algorithm: iterative_deepening Average Time: (6.474999972851946e-05, 6) 
-City One: Vaslui City Two: Drobeta Algorithm: greedy_search Average Time: (5.658000081893988e-05, 6) 
-City One: Vaslui City Two: Drobeta Algorithm: a_star_search Average Time: (0.00012417000143614132, 6) 
-City One: Vaslui City Two: Neamt Algorithm: breadth_first_search Average Time: (1.3019998732488602e-05, 3) 
-City One: Vaslui City Two: Neamt Algorithm: depth_first_search Average Time: (3.4500004403525964e-06, 3) 
-City One: Vaslui City Two: Neamt Algorithm: uniform_cost_search Average Time: (9.88000065262895e-06, 3) 
-City One: Vaslui City Two: Neamt Algorithm: iterative_deepening Average Time: (1.0410000322735869e-05, 3) 
-City One: Vaslui City Two: Neamt Algorithm: greedy_search Average Time: (1.7699999807518908e-05, 3) 
-City One: Vaslui City Two: Neamt Algorithm: a_star_search Average Time: (3.7180000435910185e-05, 3) 
-City One: Vaslui City Two: Hirsova Algorithm: breadth_first_search Average Time: (1.0969999857479707e-05, 3) 
-City One: Vaslui City Two: Hirsova Algorithm: depth_first_search Average Time: (5.830000372952782e-06, 3) 
-City One: Vaslui City Two: Hirsova Algorithm: uniform_cost_search Average Time: (1.2259999857633375e-05, 3) 
-City One: Vaslui City Two: Hirsova Algorithm: iterative_deepening Average Time: (2.063000065390952e-05, 3) 
-City One: Vaslui City Two: Hirsova Algorithm: greedy_search Average Time: (2.1880000349483453e-05, 3) 
-City One: Vaslui City Two: Hirsova Algorithm: a_star_search Average Time: (4.214000000501983e-05, 3) 
-City One: Vaslui City Two: Lugoj Algorithm: breadth_first_search Average Time: (4.074999997101258e-05, 8) 
-City One: Vaslui City Two: Lugoj Algorithm: depth_first_search Average Time: (1.556000061100349e-05, 8) 
-City One: Vaslui City Two: Lugoj Algorithm: uniform_cost_search Average Time: (4.7360000462504106e-05, 8) 
-City One: Vaslui City Two: Lugoj Algorithm: iterative_deepening Average Time: (0.00013301999897521454, 8) 
-City One: Vaslui City Two: Lugoj Algorithm: greedy_search Average Time: (7.096999943314585e-05, 8) 
-City One: Vaslui City Two: Lugoj Algorithm: a_star_search Average Time: (0.00023543000024801587, 8) 
-City One: Vaslui City Two: Arad Algorithm: breadth_first_search Average Time: (3.214999996998813e-05, 6) 
-City One: Vaslui City Two: Arad Algorithm: depth_first_search Average Time: (2.0489999587880448e-05, 10) 
-City One: Vaslui City Two: Arad Algorithm: uniform_cost_search Average Time: (4.2550000580376944e-05, 7) 
-City One: Vaslui City Two: Arad Algorithm: iterative_deepening Average Time: (5.140999965078663e-05, 6) 
-City One: Vaslui City Two: Arad Algorithm: greedy_search Average Time: (5.6559999211458487e-05, 6) 
-City One: Vaslui City Two: Arad Algorithm: a_star_search Average Time: (0.0001613000000361353, 7) 
-City One: Sibiu City Two: Rimnicu Vilcea Algorithm: breadth_first_search Average Time: (9.909999425872229e-06, 2) 
-City One: Sibiu City Two: Rimnicu Vilcea Algorithm: depth_first_search Average Time: (2.2909999097464605e-05, 6) 
-City One: Sibiu City Two: Rimnicu Vilcea Algorithm: uniform_cost_search Average Time: (5.57000093976967e-06, 2) 
-City One: Sibiu City Two: Rimnicu Vilcea Algorithm: iterative_deepening Average Time: (2.2509999325848185e-05, 2) 
-City One: Sibiu City Two: Rimnicu Vilcea Algorithm: greedy_search Average Time: (2.3430000146618114e-05, 2) 
-City One: Sibiu City Two: Rimnicu Vilcea Algorithm: a_star_search Average Time: (3.7820000579813494e-05, 2) 
-City One: Sibiu City Two: Urziceni Algorithm: breadth_first_search Average Time: (3.0389999665203504e-05, 4) 
-City One: Sibiu City Two: Urziceni Algorithm: depth_first_search Average Time: (5.0199992983834815e-06, 4) 
-City One: Sibiu City Two: Urziceni Algorithm: uniform_cost_search Average Time: (5.3920000209473076e-05, 5) 
-City One: Sibiu City Two: Urziceni Algorithm: iterative_deepening Average Time: (3.321000003779773e-05, 4) 
-City One: Sibiu City Two: Urziceni Algorithm: greedy_search Average Time: (4.126999956497457e-05, 4) 
-City One: Sibiu City Two: Urziceni Algorithm: a_star_search Average Time: (9.610999950382393e-05, 5) 
-City One: Sibiu City Two: Pitesti Algorithm: breadth_first_search Average Time: (1.6479999976581895e-05, 3) 
-City One: Sibiu City Two: Pitesti Algorithm: depth_first_search Average Time: (1.1549999908311292e-05, 4) 
-City One: Sibiu City Two: Pitesti Algorithm: uniform_cost_search Average Time: (1.4279999959398992e-05, 3) 
-City One: Sibiu City Two: Pitesti Algorithm: iterative_deepening Average Time: (1.4950000695534981e-05, 3) 
-City One: Sibiu City Two: Pitesti Algorithm: greedy_search Average Time: (3.10499995975988e-05, 3) 
-City One: Sibiu City Two: Pitesti Algorithm: a_star_search Average Time: (5.335000096238218e-05, 3) 
-City One: Sibiu City Two: Drobeta Algorithm: breadth_first_search Average Time: (2.719000076467637e-05, 4) 
-City One: Sibiu City Two: Drobeta Algorithm: depth_first_search Average Time: (1.4889999511069618e-05, 6) 
-City One: Sibiu City Two: Drobeta Algorithm: uniform_cost_search Average Time: (2.984999919135589e-05, 4) 
-City One: Sibiu City Two: Drobeta Algorithm: iterative_deepening Average Time: (4.240000125719234e-05, 4) 
-City One: Sibiu City Two: Drobeta Algorithm: greedy_search Average Time: (4.133999973419122e-05, 4) 
-City One: Sibiu City Two: Drobeta Algorithm: a_star_search Average Time: (9.590000008756761e-05, 4) 
-City One: Sibiu City Two: Neamt Algorithm: breadth_first_search Average Time: (4.869000040343963e-05, 7) 
-City One: Sibiu City Two: Neamt Algorithm: depth_first_search Average Time: (8.410000009462238e-06, 7) 
-City One: Sibiu City Two: Neamt Algorithm: uniform_cost_search Average Time: (5.703999959223438e-05, 8) 
-City One: Sibiu City Two: Neamt Algorithm: iterative_deepening Average Time: (0.00021761999960290268, 7) 
-City One: Sibiu City Two: Neamt Algorithm: greedy_search Average Time: (2.6469998920219952e-05, 0) 
-City One: Sibiu City Two: Neamt Algorithm: a_star_search Average Time: (0.00023462999997718724, 8) 
-City One: Sibiu City Two: Hirsova Algorithm: breadth_first_search Average Time: (3.736000035132747e-05, 5) 
-City One: Sibiu City Two: Hirsova Algorithm: depth_first_search Average Time: (8.98000071174465e-06, 5) 
-City One: Sibiu City Two: Hirsova Algorithm: uniform_cost_search Average Time: (4.3330000335117805e-05, 6) 
-City One: Sibiu City Two: Hirsova Algorithm: iterative_deepening Average Time: (7.615000031364616e-05, 5) 
-City One: Sibiu City Two: Hirsova Algorithm: greedy_search Average Time: (5.143999987922143e-05, 5) 
-City One: Sibiu City Two: Hirsova Algorithm: a_star_search Average Time: (0.00015112999972188845, 6) 
-City One: Sibiu City Two: Lugoj Algorithm: breadth_first_search Average Time: (2.338999984203838e-05, 4) 
-City One: Sibiu City Two: Lugoj Algorithm: depth_first_search Average Time: (2.0910000239382497e-05, 8) 
-City One: Sibiu City Two: Lugoj Algorithm: uniform_cost_search Average Time: (4.8710000191931614e-05, 4) 
-City One: Sibiu City Two: Lugoj Algorithm: iterative_deepening Average Time: (4.022999964945484e-05, 4) 
-City One: Sibiu City Two: Lugoj Algorithm: greedy_search Average Time: (3.707999931066297e-05, 4) 
-City One: Sibiu City Two: Lugoj Algorithm: a_star_search Average Time: (0.0001202800001919968, 4) 
-City One: Sibiu City Two: Arad Algorithm: breadth_first_search Average Time: (7.4000003223773095e-06, 2) 
-City One: Sibiu City Two: Arad Algorithm: depth_first_search Average Time: (1.7799999841372483e-05, 10) 
-City One: Sibiu City Two: Arad Algorithm: uniform_cost_search Average Time: (9.719999434310012e-06, 2) 
-City One: Sibiu City Two: Arad Algorithm: iterative_deepening Average Time: (6.140000550658442e-06, 2) 
-City One: Sibiu City Two: Arad Algorithm: greedy_search Average Time: (2.0789999689441173e-05, 2) 
-City One: Sibiu City Two: Arad Algorithm: a_star_search Average Time: (3.655999971670098e-05, 2) 
-City One: Rimnicu Vilcea City Two: Urziceni Algorithm: breadth_first_search Average Time: (2.9370000265771524e-05, 4) 
-City One: Rimnicu Vilcea City Two: Urziceni Algorithm: depth_first_search Average Time: (1.300999974773731e-05, 11) 
-City One: Rimnicu Vilcea City Two: Urziceni Algorithm: uniform_cost_search Average Time: (2.5300000197603366e-05, 4) 
-City One: Rimnicu Vilcea City Two: Urziceni Algorithm: iterative_deepening Average Time: (4.3730000470532104e-05, 4) 
-City One: Rimnicu Vilcea City Two: Urziceni Algorithm: greedy_search Average Time: (4.327999959059525e-05, 4) 
-City One: Rimnicu Vilcea City Two: Urziceni Algorithm: a_star_search Average Time: (6.888999996590428e-05, 4) 
-City One: Rimnicu Vilcea City Two: Pitesti Algorithm: breadth_first_search Average Time: (8.110000635497272e-06, 2) 
-City One: Rimnicu Vilcea City Two: Pitesti Algorithm: depth_first_search Average Time: (1.94800002645934e-05, 11) 
-City One: Rimnicu Vilcea City Two: Pitesti Algorithm: uniform_cost_search Average Time: (8.059999527176841e-06, 2) 
-City One: Rimnicu Vilcea City Two: Pitesti Algorithm: iterative_deepening Average Time: (5.219999729888514e-06, 2) 
-City One: Rimnicu Vilcea City Two: Pitesti Algorithm: greedy_search Average Time: (1.6279999545076863e-05, 2) 
-City One: Rimnicu Vilcea City Two: Pitesti Algorithm: a_star_search Average Time: (3.152999997837469e-05, 2) 
-City One: Rimnicu Vilcea City Two: Drobeta Algorithm: breadth_first_search Average Time: (2.0870000298600644e-05, 3) 
-City One: Rimnicu Vilcea City Two: Drobeta Algorithm: depth_first_search Average Time: (3.539999306667596e-06, 3) 
-City One: Rimnicu Vilcea City Two: Drobeta Algorithm: uniform_cost_search Average Time: (2.3409999994328245e-05, 3) 
-City One: Rimnicu Vilcea City Two: Drobeta Algorithm: iterative_deepening Average Time: (1.3580000450019725e-05, 3) 
-City One: Rimnicu Vilcea City Two: Drobeta Algorithm: greedy_search Average Time: (2.6240000443067403e-05, 3) 
-City One: Rimnicu Vilcea City Two: Drobeta Algorithm: a_star_search Average Time: (9.011000001919456e-05, 3) 
-City One: Rimnicu Vilcea City Two: Neamt Algorithm: breadth_first_search Average Time: (5.088000070827547e-05, 7) 
-City One: Rimnicu Vilcea City Two: Neamt Algorithm: depth_first_search Average Time: (3.553999958967324e-05, 14) 
-City One: Rimnicu Vilcea City Two: Neamt Algorithm: uniform_cost_search Average Time: (4.682999970100355e-05, 7) 
-City One: Rimnicu Vilcea City Two: Neamt Algorithm: iterative_deepening Average Time: (0.00019419999989622738, 7) 
-City One: Rimnicu Vilcea City Two: Neamt Algorithm: greedy_search Average Time: (3.6290000207372944e-05, 0) 
-City One: Rimnicu Vilcea City Two: Neamt Algorithm: a_star_search Average Time: (0.00017513000057078898, 7) 
-City One: Rimnicu Vilcea City Two: Hirsova Algorithm: breadth_first_search Average Time: (3.786999950534664e-05, 5) 
-City One: Rimnicu Vilcea City Two: Hirsova Algorithm: depth_first_search Average Time: (1.6709999908925965e-05, 12) 
-City One: Rimnicu Vilcea City Two: Hirsova Algorithm: uniform_cost_search Average Time: (3.577000024961308e-05, 5) 
-City One: Rimnicu Vilcea City Two: Hirsova Algorithm: iterative_deepening Average Time: (0.00036910000053467227, 5) 
-City One: Rimnicu Vilcea City Two: Hirsova Algorithm: greedy_search Average Time: (5.217000070842914e-05, 5) 
-City One: Rimnicu Vilcea City Two: Hirsova Algorithm: a_star_search Average Time: (9.615000053599942e-05, 5) 
-City One: Rimnicu Vilcea City Two: Lugoj Algorithm: breadth_first_search Average Time: (4.2999999641324395e-05, 5) 
-City One: Rimnicu Vilcea City Two: Lugoj Algorithm: depth_first_search Average Time: (5.919999966863543e-06, 5) 
-City One: Rimnicu Vilcea City Two: Lugoj Algorithm: uniform_cost_search Average Time: (4.0430000080959874e-05, 5) 
-City One: Rimnicu Vilcea City Two: Lugoj Algorithm: iterative_deepening Average Time: (7.471999997505918e-05, 5) 
-City One: Rimnicu Vilcea City Two: Lugoj Algorithm: greedy_search Average Time: (6.127999949967489e-05, 5) 
-City One: Rimnicu Vilcea City Two: Lugoj Algorithm: a_star_search Average Time: (0.0001833700000133831, 5) 
-City One: Rimnicu Vilcea City Two: Arad Algorithm: breadth_first_search Average Time: (1.3589999798568898e-05, 3) 
-City One: Rimnicu Vilcea City Two: Arad Algorithm: depth_first_search Average Time: (8.290000914712437e-06, 7) 
-City One: Rimnicu Vilcea City Two: Arad Algorithm: uniform_cost_search Average Time: (1.689000055193901e-05, 3) 
-City One: Rimnicu Vilcea City Two: Arad Algorithm: iterative_deepening Average Time: (1.953999999386724e-05, 3) 
-City One: Rimnicu Vilcea City Two: Arad Algorithm: greedy_search Average Time: (3.130000004603062e-05, 3) 
-City One: Rimnicu Vilcea City Two: Arad Algorithm: a_star_search Average Time: (5.334999914339278e-05, 3) 
-City One: Urziceni City Two: Pitesti Algorithm: breadth_first_search Average Time: (1.8889999773818998e-05, 3) 
-City One: Urziceni City Two: Pitesti Algorithm: depth_first_search Average Time: (1.1950000407523476e-05, 3) 
-City One: Urziceni City Two: Pitesti Algorithm: uniform_cost_search Average Time: (1.3749999925494195e-05, 3) 
-City One: Urziceni City Two: Pitesti Algorithm: iterative_deepening Average Time: (1.926000004459638e-05, 3) 
-City One: Urziceni City Two: Pitesti Algorithm: greedy_search Average Time: (3.513000046950765e-05, 3) 
-City One: Urziceni City Two: Pitesti Algorithm: a_star_search Average Time: (5.690000070899259e-05, 3) 
-City One: Urziceni City Two: Drobeta Algorithm: breadth_first_search Average Time: (3.77199990907684e-05, 5) 
-City One: Urziceni City Two: Drobeta Algorithm: depth_first_search Average Time: (1.9949999841628597e-05, 5) 
-City One: Urziceni City Two: Drobeta Algorithm: uniform_cost_search Average Time: (3.288000007160008e-05, 5) 
-City One: Urziceni City Two: Drobeta Algorithm: iterative_deepening Average Time: (5.70399992284365e-05, 5) 
-City One: Urziceni City Two: Drobeta Algorithm: greedy_search Average Time: (5.598000025202055e-05, 5) 
-City One: Urziceni City Two: Drobeta Algorithm: a_star_search Average Time: (0.00010181000070588197, 5) 
-City One: Urziceni City Two: Neamt Algorithm: breadth_first_search Average Time: (3.803000072366558e-05, 4) 
-City One: Urziceni City Two: Neamt Algorithm: depth_first_search Average Time: (4.559999797493219e-06, 4) 
-City One: Urziceni City Two: Neamt Algorithm: uniform_cost_search Average Time: (2.2499999977299014e-05, 4) 
-City One: Urziceni City Two: Neamt Algorithm: iterative_deepening Average Time: (3.5569999454310164e-05, 4) 
-City One: Urziceni City Two: Neamt Algorithm: greedy_search Average Time: (4.879999978584238e-05, 4) 
-City One: Urziceni City Two: Neamt Algorithm: a_star_search Average Time: (5.4330000057234426e-05, 4) 
-City One: Urziceni City Two: Hirsova Algorithm: breadth_first_search Average Time: (8.349999916390516e-06, 2) 
-City One: Urziceni City Two: Hirsova Algorithm: depth_first_search Average Time: (5.210000381339341e-06, 2) 
-City One: Urziceni City Two: Hirsova Algorithm: uniform_cost_search Average Time: (1.3340000441530719e-05, 2) 
-City One: Urziceni City Two: Hirsova Algorithm: iterative_deepening Average Time: (5.299999611452222e-06, 2) 
-City One: Urziceni City Two: Hirsova Algorithm: greedy_search Average Time: (1.6479999976581895e-05, 2) 
-City One: Urziceni City Two: Hirsova Algorithm: a_star_search Average Time: (3.1659999513067306e-05, 2) 
-City One: Urziceni City Two: Lugoj Algorithm: breadth_first_search Average Time: (4.05599992518546e-05, 7) 
-City One: Urziceni City Two: Lugoj Algorithm: depth_first_search Average Time: (1.5080000230227597e-05, 7) 
-City One: Urziceni City Two: Lugoj Algorithm: uniform_cost_search Average Time: (4.790000057255384e-05, 7) 
-City One: Urziceni City Two: Lugoj Algorithm: iterative_deepening Average Time: (0.00012666000075114425, 7) 
-City One: Urziceni City Two: Lugoj Algorithm: greedy_search Average Time: (6.593999933102168e-05, 7) 
-City One: Urziceni City Two: Lugoj Algorithm: a_star_search Average Time: (0.0002952399998321198, 7) 
-City One: Urziceni City Two: Arad Algorithm: breadth_first_search Average Time: (0.0001372899998386856, 5) 
-City One: Urziceni City Two: Arad Algorithm: depth_first_search Average Time: (2.9100000756443477e-05, 9) 
-City One: Urziceni City Two: Arad Algorithm: uniform_cost_search Average Time: (3.950000063923653e-05, 6) 
-City One: Urziceni City Two: Arad Algorithm: iterative_deepening Average Time: (5.452999903354794e-05, 5) 
-City One: Urziceni City Two: Arad Algorithm: greedy_search Average Time: (7.180999964475631e-05, 5) 
-City One: Urziceni City Two: Arad Algorithm: a_star_search Average Time: (0.0001507500001025619, 6) 
-City One: Pitesti City Two: Drobeta Algorithm: breadth_first_search Average Time: (1.6920000780373813e-05, 3) 
-City One: Pitesti City Two: Drobeta Algorithm: depth_first_search Average Time: (1.4969999392633327e-05, 7) 
-City One: Pitesti City Two: Drobeta Algorithm: uniform_cost_search Average Time: (2.2629999875789508e-05, 3) 
-City One: Pitesti City Two: Drobeta Algorithm: iterative_deepening Average Time: (2.6499999876250513e-05, 3) 
-City One: Pitesti City Two: Drobeta Algorithm: greedy_search Average Time: (2.660999962245114e-05, 3) 
-City One: Pitesti City Two: Drobeta Algorithm: a_star_search Average Time: (5.8970000100089234e-05, 3) 
-City One: Pitesti City Two: Neamt Algorithm: breadth_first_search Average Time: (4.2909999319817874e-05, 6) 
-City One: Pitesti City Two: Neamt Algorithm: depth_first_search Average Time: (7.189999450929463e-06, 6) 
-City One: Pitesti City Two: Neamt Algorithm: uniform_cost_search Average Time: (4.4910000360687265e-05, 6) 
-City One: Pitesti City Two: Neamt Algorithm: iterative_deepening Average Time: (0.00016201999969780445, 6) 
-City One: Pitesti City Two: Neamt Algorithm: greedy_search Average Time: (8.869999946909956e-05, 0) 
-City One: Pitesti City Two: Neamt Algorithm: a_star_search Average Time: (0.00025481999982730487, 6) 
-City One: Pitesti City Two: Hirsova Algorithm: breadth_first_search Average Time: (5.745999951614067e-05, 4) 
-City One: Pitesti City Two: Hirsova Algorithm: depth_first_search Average Time: (1.5150000399444252e-05, 4) 
-City One: Pitesti City Two: Hirsova Algorithm: uniform_cost_search Average Time: (4.8709999828133735e-05, 4) 
-City One: Pitesti City Two: Hirsova Algorithm: iterative_deepening Average Time: (6.052999997336883e-05, 4) 
-City One: Pitesti City Two: Hirsova Algorithm: greedy_search Average Time: (7.192999946710188e-05, 4) 
-City One: Pitesti City Two: Hirsova Algorithm: a_star_search Average Time: (9.2969999241177e-05, 4) 
-City One: Pitesti City Two: Lugoj Algorithm: breadth_first_search Average Time: (3.758999991987366e-05, 5) 
-City One: Pitesti City Two: Lugoj Algorithm: depth_first_search Average Time: (1.7039999511325733e-05, 9) 
-City One: Pitesti City Two: Lugoj Algorithm: uniform_cost_search Average Time: (3.9709999691694974e-05, 5) 
-City One: Pitesti City Two: Lugoj Algorithm: iterative_deepening Average Time: (7.486000031349249e-05, 5) 
-City One: Pitesti City Two: Lugoj Algorithm: greedy_search Average Time: (8.216000060201623e-05, 6) 
-City One: Pitesti City Two: Lugoj Algorithm: a_star_search Average Time: (0.00012724999978672714, 5) 
-City One: Pitesti City Two: Arad Algorithm: breadth_first_search Average Time: (3.037999886146281e-05, 4) 
-City One: Pitesti City Two: Arad Algorithm: depth_first_search Average Time: (1.9039999824599362e-05, 11) 
-City One: Pitesti City Two: Arad Algorithm: uniform_cost_search Average Time: (2.7919999047298917e-05, 4) 
-City One: Pitesti City Two: Arad Algorithm: iterative_deepening Average Time: (3.3630000325501895e-05, 4) 
-City One: Pitesti City Two: Arad Algorithm: greedy_search Average Time: (4.0839999928721224e-05, 4) 
-City One: Pitesti City Two: Arad Algorithm: a_star_search Average Time: (8.664000015414785e-05, 4) 
-City One: Drobeta City Two: Neamt Algorithm: breadth_first_search Average Time: (5.073000065749511e-05, 8) 
-City One: Drobeta City Two: Neamt Algorithm: depth_first_search Average Time: (1.3780000153928995e-05, 12) 
-City One: Drobeta City Two: Neamt Algorithm: uniform_cost_search Average Time: (5.559000019275118e-05, 8) 
-City One: Drobeta City Two: Neamt Algorithm: iterative_deepening Average Time: (0.0005727699997805757, 8) 
-City One: Drobeta City Two: Neamt Algorithm: greedy_search Average Time: (5.888000014238059e-05, 0) 
-City One: Drobeta City Two: Neamt Algorithm: a_star_search Average Time: (0.0002249199998914264, 8) 
-City One: Drobeta City Two: Hirsova Algorithm: breadth_first_search Average Time: (3.864999962388538e-05, 6) 
-City One: Drobeta City Two: Hirsova Algorithm: depth_first_search Average Time: (1.4429999282583594e-05, 10) 
-City One: Drobeta City Two: Hirsova Algorithm: uniform_cost_search Average Time: (3.603000004659407e-05, 6) 
-City One: Drobeta City Two: Hirsova Algorithm: iterative_deepening Average Time: (8.670999959576875e-05, 6) 
-City One: Drobeta City Two: Hirsova Algorithm: greedy_search Average Time: (5.694000101357233e-05, 6) 
-City One: Drobeta City Two: Hirsova Algorithm: a_star_search Average Time: (0.00045338000018091407, 6) 
-City One: Drobeta City Two: Lugoj Algorithm: breadth_first_search Average Time: (1.70300012541702e-05, 3) 
-City One: Drobeta City Two: Lugoj Algorithm: depth_first_search Average Time: (3.389999983482994e-06, 3) 
-City One: Drobeta City Two: Lugoj Algorithm: uniform_cost_search Average Time: (8.8699995103525e-06, 3) 
-City One: Drobeta City Two: Lugoj Algorithm: iterative_deepening Average Time: (1.447000031475909e-05, 3) 
-City One: Drobeta City Two: Lugoj Algorithm: greedy_search Average Time: (2.0839999706367962e-05, 3) 
-City One: Drobeta City Two: Lugoj Algorithm: a_star_search Average Time: (3.7360000715125355e-05, 3) 
-City One: Drobeta City Two: Arad Algorithm: breadth_first_search Average Time: (2.5640000239945947e-05, 5) 
-City One: Drobeta City Two: Arad Algorithm: depth_first_search Average Time: (5.400000009103678e-06, 5) 
-City One: Drobeta City Two: Arad Algorithm: uniform_cost_search Average Time: (2.479999930073973e-05, 5) 
-City One: Drobeta City Two: Arad Algorithm: iterative_deepening Average Time: (5.5469999642809854e-05, 5) 
-City One: Drobeta City Two: Arad Algorithm: greedy_search Average Time: (3.518000048643444e-05, 5) 
-City One: Drobeta City Two: Arad Algorithm: a_star_search Average Time: (5.9359999795560725e-05, 5) 
-City One: Neamt City Two: Hirsova Algorithm: breadth_first_search Average Time: (1.2510001397458836e-05, 5) 
-City One: Neamt City Two: Hirsova Algorithm: depth_first_search Average Time: (5.439999586087651e-06, 5) 
-City One: Neamt City Two: Hirsova Algorithm: uniform_cost_search Average Time: (1.250000022992026e-05, 5) 
-City One: Neamt City Two: Hirsova Algorithm: iterative_deepening Average Time: (2.8620000375667586e-05, 5) 
-City One: Neamt City Two: Hirsova Algorithm: greedy_search Average Time: (2.85700003587408e-05, 5) 
-City One: Neamt City Two: Hirsova Algorithm: a_star_search Average Time: (5.845999985467643e-05, 5) 
-City One: Neamt City Two: Lugoj Algorithm: breadth_first_search Average Time: (4.119000041100662e-05, 10) 
-City One: Neamt City Two: Lugoj Algorithm: depth_first_search Average Time: (1.5049999637994915e-05, 10) 
-City One: Neamt City Two: Lugoj Algorithm: uniform_cost_search Average Time: (5.6840000252122993e-05, 10) 
-City One: Neamt City Two: Lugoj Algorithm: iterative_deepening Average Time: (0.00016193999945244287, 10) 
-City One: Neamt City Two: Lugoj Algorithm: greedy_search Average Time: (7.889000080467668e-05, 10) 
-City One: Neamt City Two: Lugoj Algorithm: a_star_search Average Time: (0.00023786999845469835, 10) 
-City One: Neamt City Two: Arad Algorithm: breadth_first_search Average Time: (2.7430000045569614e-05, 8) 
-City One: Neamt City Two: Arad Algorithm: depth_first_search Average Time: (1.680000059423037e-05, 12) 
-City One: Neamt City Two: Arad Algorithm: uniform_cost_search Average Time: (3.420999964873772e-05, 9) 
-City One: Neamt City Two: Arad Algorithm: iterative_deepening Average Time: (6.855000028735959e-05, 8) 
-City One: Neamt City Two: Arad Algorithm: greedy_search Average Time: (1.2839998817071319e-05, 0) 
-City One: Neamt City Two: Arad Algorithm: a_star_search Average Time: (0.00020396000072651078, 9) 
-City One: Hirsova City Two: Lugoj Algorithm: breadth_first_search Average Time: (9.571000009600539e-05, 8) 
-City One: Hirsova City Two: Lugoj Algorithm: depth_first_search Average Time: (3.260000084992498e-05, 8) 
-City One: Hirsova City Two: Lugoj Algorithm: uniform_cost_search Average Time: (4.845999937970191e-05, 8) 
-City One: Hirsova City Two: Lugoj Algorithm: iterative_deepening Average Time: (0.00013539000028686132, 8) 
-City One: Hirsova City Two: Lugoj Algorithm: greedy_search Average Time: (7.327000057557597e-05, 8) 
-City One: Hirsova City Two: Lugoj Algorithm: a_star_search Average Time: (0.0002606799993372988, 8) 
-City One: Hirsova City Two: Arad Algorithm: breadth_first_search Average Time: (2.916999983426649e-05, 6) 
-City One: Hirsova City Two: Arad Algorithm: depth_first_search Average Time: (4.43900004029274e-05, 10) 
-City One: Hirsova City Two: Arad Algorithm: uniform_cost_search Average Time: (3.509000016492792e-05, 7) 
-City One: Hirsova City Two: Arad Algorithm: iterative_deepening Average Time: (7.339999974647071e-05, 6) 
-City One: Hirsova City Two: Arad Algorithm: greedy_search Average Time: (0.00010163000042666681, 6) 
-City One: Hirsova City Two: Arad Algorithm: a_star_search Average Time: (0.00012777999982063192, 7) 
-City One: Lugoj City Two: Arad Algorithm: breadth_first_search Average Time: (8.510000407113694e-06, 3) 
-City One: Lugoj City Two: Arad Algorithm: depth_first_search Average Time: (2.448999985062983e-05, 9) 
-City One: Lugoj City Two: Arad Algorithm: uniform_cost_search Average Time: (9.53999988269061e-06, 3) 
-City One: Lugoj City Two: Arad Algorithm: iterative_deepening Average Time: (1.0930000280495733e-05, 3) 
-City One: Lugoj City Two: Arad Algorithm: greedy_search Average Time: (1.8619999173097314e-05, 3) 
-City One: Lugoj City Two: Arad Algorithm: a_star_search Average Time: (3.8930000300752e-05, 3) 
+Algorithm,City One,City Two,Average Time,Path Length
+breadth_first_search,Craiova,Neamt,5.9800000235554764e-05,7 
+depth_first_search,Craiova,Neamt,1.0319999455532525e-05,13 
+uniform_cost_search,Craiova,Neamt,3.8560000029974616e-05,7 
+iterative_deepening,Craiova,Neamt,0.00012568999954964966,7 
+greedy_search,Craiova,Neamt,3.761000043596141e-05,0 
+a_star_search,Craiova,Neamt,0.00013561999985540752,7 
+breadth_first_search,Craiova,Oradea,2.598999999463558e-05,4 
+depth_first_search,Craiova,Oradea,2.089000008709263e-05,8 
+uniform_cost_search,Craiova,Oradea,2.870999978767941e-05,4 
+iterative_deepening,Craiova,Oradea,2.713999983825488e-05,4 
+greedy_search,Craiova,Oradea,2.404000006208662e-05,0 
+a_star_search,Craiova,Oradea,0.00013794000042253174,4 
+breadth_first_search,Craiova,Sibiu,1.4480000572802965e-05,3 
+depth_first_search,Craiova,Sibiu,5.980000059935264e-06,7 
+uniform_cost_search,Craiova,Sibiu,2.124999955412932e-05,3 
+iterative_deepening,Craiova,Sibiu,2.1949999791104347e-05,3 
+greedy_search,Craiova,Sibiu,2.2849999913887588e-05,3 
+a_star_search,Craiova,Sibiu,3.359000002092216e-05,3 
+breadth_first_search,Craiova,Zerind,3.830999976344174e-05,5 
+depth_first_search,Craiova,Zerind,1.528000011603581e-05,9 
+uniform_cost_search,Craiova,Zerind,3.203999985998962e-05,5 
+iterative_deepening,Craiova,Zerind,3.719000014825724e-05,5 
+greedy_search,Craiova,Zerind,3.164999980072025e-05,7 
+a_star_search,Craiova,Zerind,8.754000009503216e-05,5 
+breadth_first_search,Craiova,Mehadia,1.5300000086426735e-05,3 
+depth_first_search,Craiova,Mehadia,2.300000414834358e-06,3 
+uniform_cost_search,Craiova,Mehadia,6.900000153109432e-06,3 
+iterative_deepening,Craiova,Mehadia,8.369999886781442e-06,3 
+greedy_search,Craiova,Mehadia,1.4050000027054921e-05,3 
+a_star_search,Craiova,Mehadia,3.292000001238193e-05,3 
+breadth_first_search,Craiova,Hirsova,2.3260000125446824e-05,5 
+depth_first_search,Craiova,Hirsova,1.1819999963336159e-05,11 
+uniform_cost_search,Craiova,Hirsova,2.1440000091388355e-05,5 
+iterative_deepening,Craiova,Hirsova,4.036999998788815e-05,5 
+greedy_search,Craiova,Hirsova,5.488999977387721e-05,5 
+a_star_search,Craiova,Hirsova,6.906000016897451e-05,5 
+breadth_first_search,Craiova,Iasi,3.246000014769379e-05,6 
+depth_first_search,Craiova,Iasi,4.877999981545145e-05,12 
+uniform_cost_search,Craiova,Iasi,3.236999982618727e-05,6 
+iterative_deepening,Craiova,Iasi,0.00011360999997123145,6 
+greedy_search,Craiova,Iasi,3.28799997078022e-05,0 
+a_star_search,Craiova,Iasi,0.00010855999989871634,6 
+breadth_first_search,Craiova,Urziceni,2.2059999901102854e-05,4 
+depth_first_search,Craiova,Urziceni,7.750000077066942e-06,10 
+uniform_cost_search,Craiova,Urziceni,1.4889999874867499e-05,4 
+iterative_deepening,Craiova,Urziceni,2.427000017632963e-05,4 
+greedy_search,Craiova,Urziceni,2.6779999643622432e-05,4 
+a_star_search,Craiova,Urziceni,5.158999993000179e-05,4 
+breadth_first_search,Craiova,Pitesti,4.520000220509246e-06,2 
+depth_first_search,Craiova,Pitesti,1.202000021294225e-05,10 
+uniform_cost_search,Craiova,Pitesti,4.70000013592653e-06,2 
+iterative_deepening,Craiova,Pitesti,1.289000047108857e-05,2 
+greedy_search,Craiova,Pitesti,1.2680000145337544e-05,2 
+a_star_search,Craiova,Pitesti,2.2959999660088216e-05,2 
+breadth_first_search,Neamt,Oradea,1.7820000357460232e-05,8 
+depth_first_search,Neamt,Oradea,1.7150000167021064e-05,14 
+uniform_cost_search,Neamt,Oradea,2.8229999225004575e-05,9 
+iterative_deepening,Neamt,Oradea,4.319999989093049e-05,8 
+greedy_search,Neamt,Oradea,8.459999844490084e-06,0 
+a_star_search,Neamt,Oradea,0.0001113600001190207,9 
+breadth_first_search,Neamt,Sibiu,1.7889999980980065e-05,7 
+depth_first_search,Neamt,Sibiu,2.5550000100338365e-05,13 
+uniform_cost_search,Neamt,Sibiu,2.618999988044379e-05,8 
+iterative_deepening,Neamt,Sibiu,5.974000014248304e-05,7 
+greedy_search,Neamt,Sibiu,4.6909999764466195e-05,7 
+a_star_search,Neamt,Sibiu,8.354000001418172e-05,8 
+breadth_first_search,Neamt,Zerind,2.1179999930609483e-05,9 
+depth_first_search,Neamt,Zerind,2.027000009547919e-05,15 
+uniform_cost_search,Neamt,Zerind,2.905000001192093e-05,10 
+iterative_deepening,Neamt,Zerind,6.603000001632608e-05,9 
+greedy_search,Neamt,Zerind,8.419999903708231e-06,0 
+a_star_search,Neamt,Zerind,0.00011096999987785239,10 
+breadth_first_search,Neamt,Mehadia,3.015999973285943e-05,9 
+depth_first_search,Neamt,Mehadia,8.710000111022964e-06,9 
+uniform_cost_search,Neamt,Mehadia,2.4420000045211054e-05,9 
+iterative_deepening,Neamt,Mehadia,6.32599998425576e-05,9 
+greedy_search,Neamt,Mehadia,4.6320000001287555e-05,9 
+a_star_search,Neamt,Mehadia,0.0001174300001366646,9 
+breadth_first_search,Neamt,Hirsova,1.636000015423633e-05,5 
+depth_first_search,Neamt,Hirsova,3.769999966607429e-06,5 
+uniform_cost_search,Neamt,Hirsova,8.66999998834217e-06,5 
+iterative_deepening,Neamt,Hirsova,2.607000005809823e-05,5 
+greedy_search,Neamt,Hirsova,2.1209999977145345e-05,5 
+a_star_search,Neamt,Hirsova,3.891999986080918e-05,5 
+breadth_first_search,Neamt,Iasi,2.4799999664537607e-06,2 
+depth_first_search,Neamt,Iasi,1.330000304733403e-06,2 
+uniform_cost_search,Neamt,Iasi,1.860000156739261e-06,2 
+iterative_deepening,Neamt,Iasi,2.7000003683497196e-06,2 
+greedy_search,Neamt,Iasi,4.760000228998251e-06,2 
+a_star_search,Neamt,Iasi,1.384999995934777e-05,2 
+breadth_first_search,Neamt,Urziceni,4.219999937049579e-06,4 
+depth_first_search,Neamt,Urziceni,2.8200000087963415e-06,4 
+uniform_cost_search,Neamt,Urziceni,4.319999789004214e-06,4 
+iterative_deepening,Neamt,Urziceni,1.5290000010281802e-05,4 
+greedy_search,Neamt,Urziceni,1.1900000208697747e-05,4 
+a_star_search,Neamt,Urziceni,3.455000023677712e-05,4 
+breadth_first_search,Neamt,Pitesti,9.860000136541203e-06,6 
+depth_first_search,Neamt,Pitesti,6.6999999035033396e-06,6 
+uniform_cost_search,Neamt,Pitesti,1.052999959938461e-05,6 
+iterative_deepening,Neamt,Pitesti,2.3810000129742548e-05,6 
+greedy_search,Neamt,Pitesti,2.793000021483749e-05,6 
+a_star_search,Neamt,Pitesti,5.432000016298843e-05,6 
+breadth_first_search,Oradea,Sibiu,3.7900004826951773e-06,2 
+depth_first_search,Oradea,Sibiu,1.5300000086426735e-06,2 
+uniform_cost_search,Oradea,Sibiu,5.079999937152024e-06,2 
+iterative_deepening,Oradea,Sibiu,3.04000004689442e-06,2 
+greedy_search,Oradea,Sibiu,7.749999895168003e-06,2 
+a_star_search,Oradea,Sibiu,1.7409999964002053e-05,2 
+breadth_first_search,Oradea,Zerind,2.750000021478627e-06,2 
+depth_first_search,Oradea,Zerind,1.298000024689827e-05,12 
+uniform_cost_search,Oradea,Zerind,2.4300001314259133e-06,2 
+iterative_deepening,Oradea,Zerind,9.31999984459253e-06,2 
+greedy_search,Oradea,Zerind,1.1309999717923346e-05,2 
+a_star_search,Oradea,Zerind,1.931000024342211e-05,2 
+breadth_first_search,Oradea,Mehadia,2.3079999846231657e-05,6 
+depth_first_search,Oradea,Mehadia,1.022000014927471e-05,8 
+uniform_cost_search,Oradea,Mehadia,2.0229999972798395e-05,6 
+iterative_deepening,Oradea,Mehadia,5.841999955009669e-05,6 
+greedy_search,Oradea,Mehadia,3.789000002143439e-05,6 
+a_star_search,Oradea,Mehadia,7.700999994995073e-05,6 
+breadth_first_search,Oradea,Hirsova,2.6390000311948824e-05,6 
+depth_first_search,Oradea,Hirsova,6.44999963697046e-06,6 
+uniform_cost_search,Oradea,Hirsova,4.939999926136807e-05,7 
+iterative_deepening,Oradea,Hirsova,7.018000014795689e-05,6 
+greedy_search,Oradea,Hirsova,6.569000015588244e-05,6 
+a_star_search,Oradea,Hirsova,0.00013426999994408105,7 
+breadth_first_search,Oradea,Iasi,7.590000004711328e-05,7 
+depth_first_search,Oradea,Iasi,1.3929999840911478e-05,7 
+uniform_cost_search,Oradea,Iasi,7.215000005089678e-05,8 
+iterative_deepening,Oradea,Iasi,0.00014413999997486826,7 
+greedy_search,Oradea,Iasi,2.1699999888369347e-05,0 
+a_star_search,Oradea,Iasi,0.00013071000012132572,8 
+breadth_first_search,Oradea,Urziceni,2.5249999816878697e-05,5 
+depth_first_search,Oradea,Urziceni,4.369999987829942e-06,5 
+uniform_cost_search,Oradea,Urziceni,2.5430000096093864e-05,6 
+iterative_deepening,Oradea,Urziceni,3.199000002496177e-05,5 
+greedy_search,Oradea,Urziceni,3.4220000088680536e-05,5 
+a_star_search,Oradea,Urziceni,7.899000011093448e-05,6 
+breadth_first_search,Oradea,Pitesti,1.2389999938022811e-05,4 
+depth_first_search,Oradea,Pitesti,9.800000225368421e-06,5 
+uniform_cost_search,Oradea,Pitesti,1.1779999840655365e-05,4 
+iterative_deepening,Oradea,Pitesti,1.6740000137360767e-05,4 
+greedy_search,Oradea,Pitesti,3.048999988095602e-05,4 
+a_star_search,Oradea,Pitesti,4.21500002630637e-05,4 
+breadth_first_search,Sibiu,Zerind,8.779999916441739e-06,3 
+depth_first_search,Sibiu,Zerind,1.2340000284893905e-05,11 
+uniform_cost_search,Sibiu,Zerind,1.1020000056305434e-05,3 
+iterative_deepening,Sibiu,Zerind,1.1699999959091656e-05,3 
+greedy_search,Sibiu,Zerind,2.2369999896909576e-05,3 
+a_star_search,Sibiu,Zerind,4.788999976881314e-05,3 
+breadth_first_search,Sibiu,Mehadia,2.2640000497631264e-05,5 
+depth_first_search,Sibiu,Mehadia,1.0169999950448982e-05,7 
+uniform_cost_search,Sibiu,Mehadia,2.8309999834164046e-05,5 
+iterative_deepening,Sibiu,Mehadia,4.1770000098040325e-05,5 
+greedy_search,Sibiu,Mehadia,3.420999964873772e-05,5 
+a_star_search,Sibiu,Mehadia,0.00010765999995783204,5 
+breadth_first_search,Sibiu,Hirsova,2.600999960122863e-05,5 
+depth_first_search,Sibiu,Hirsova,5.8500001614447685e-06,5 
+uniform_cost_search,Sibiu,Hirsova,2.83499997749459e-05,6 
+iterative_deepening,Sibiu,Hirsova,5.749000047217123e-05,5 
+greedy_search,Sibiu,Hirsova,3.681999951368198e-05,5 
+a_star_search,Sibiu,Hirsova,9.726000043883687e-05,6 
+breadth_first_search,Sibiu,Iasi,2.8449999990698416e-05,6 
+depth_first_search,Sibiu,Iasi,4.799999805982224e-06,6 
+uniform_cost_search,Sibiu,Iasi,3.376999993633945e-05,7 
+iterative_deepening,Sibiu,Iasi,7.9090000326687e-05,6 
+greedy_search,Sibiu,Iasi,1.714999998512212e-05,0 
+a_star_search,Sibiu,Iasi,0.00011749999976018444,7 
+breadth_first_search,Sibiu,Urziceni,1.883000004454516e-05,4 
+depth_first_search,Sibiu,Urziceni,5.18000033480348e-06,4 
+uniform_cost_search,Sibiu,Urziceni,2.296999991813209e-05,5 
+iterative_deepening,Sibiu,Urziceni,2.1100000049045774e-05,4 
+greedy_search,Sibiu,Urziceni,3.028999963134993e-05,4 
+a_star_search,Sibiu,Urziceni,6.305999977485044e-05,5 
+breadth_first_search,Sibiu,Pitesti,1.2769999921147246e-05,3 
+depth_first_search,Sibiu,Pitesti,7.379999988188501e-06,4 
+uniform_cost_search,Sibiu,Pitesti,9.169999793812167e-06,3 
+iterative_deepening,Sibiu,Pitesti,9.71000008576084e-06,3 
+greedy_search,Sibiu,Pitesti,2.013000012084376e-05,3 
+a_star_search,Sibiu,Pitesti,3.870000018650899e-05,3 
+breadth_first_search,Zerind,Mehadia,2.0819999917875975e-05,5 
+depth_first_search,Zerind,Mehadia,3.729999843926635e-06,5 
+uniform_cost_search,Zerind,Mehadia,1.6520000099262688e-05,5 
+iterative_deepening,Zerind,Mehadia,2.5740000273799525e-05,5 
+greedy_search,Zerind,Mehadia,2.1629999901051632e-05,5 
+a_star_search,Zerind,Mehadia,7.700000023760367e-05,5 
+breadth_first_search,Zerind,Hirsova,3.435000016906997e-05,7 
+depth_first_search,Zerind,Hirsova,1.2570000217237976e-05,11 
+uniform_cost_search,Zerind,Hirsova,6.260999962250934e-05,8 
+iterative_deepening,Zerind,Hirsova,0.00010010000005422626,7 
+greedy_search,Zerind,Hirsova,4.309999985707691e-05,7 
+a_star_search,Zerind,Hirsova,0.00015621999991708436,8 
+breadth_first_search,Zerind,Iasi,3.806000004260568e-05,8 
+depth_first_search,Zerind,Iasi,9.029999819176738e-06,12 
+uniform_cost_search,Zerind,Iasi,5.2880000112054404e-05,9 
+iterative_deepening,Zerind,Iasi,0.00015888000052655116,8 
+greedy_search,Zerind,Iasi,2.466000005370006e-05,0 
+a_star_search,Zerind,Iasi,0.0001704599999357015,9 
+breadth_first_search,Zerind,Urziceni,5.894999958400149e-05,6 
+depth_first_search,Zerind,Urziceni,9.190000128000975e-06,10 
+uniform_cost_search,Zerind,Urziceni,3.302000004623551e-05,7 
+iterative_deepening,Zerind,Urziceni,5.5920000340847766e-05,6 
+greedy_search,Zerind,Urziceni,4.736999981105328e-05,6 
+a_star_search,Zerind,Urziceni,8.860999969328986e-05,7 
+breadth_first_search,Zerind,Pitesti,2.0620000213966705e-05,5 
+depth_first_search,Zerind,Pitesti,5.9800002418342045e-06,8 
+uniform_cost_search,Zerind,Pitesti,1.7780000234779436e-05,5 
+iterative_deepening,Zerind,Pitesti,3.467999995336868e-05,5 
+greedy_search,Zerind,Pitesti,3.0500000138999895e-05,5 
+a_star_search,Zerind,Pitesti,5.253000035736477e-05,5 
+breadth_first_search,Mehadia,Hirsova,2.6190000062342735e-05,7 
+depth_first_search,Mehadia,Hirsova,7.179999920481351e-06,7 
+uniform_cost_search,Mehadia,Hirsova,2.77299999652314e-05,7 
+iterative_deepening,Mehadia,Hirsova,6.545999985974049e-05,7 
+greedy_search,Mehadia,Hirsova,4.640999959519832e-05,7 
+a_star_search,Mehadia,Hirsova,9.639000018069055e-05,7 
+breadth_first_search,Mehadia,Iasi,2.9889999495935626e-05,8 
+depth_first_search,Mehadia,Iasi,6.160000339150429e-06,8 
+uniform_cost_search,Mehadia,Iasi,2.8389999351929872e-05,8 
+iterative_deepening,Mehadia,Iasi,0.00012678000002779298,8 
+greedy_search,Mehadia,Iasi,1.1869999980262946e-05,0 
+a_star_search,Mehadia,Iasi,0.0001489399994170526,8 
+breadth_first_search,Mehadia,Urziceni,2.2709999939252157e-05,6 
+depth_first_search,Mehadia,Urziceni,6.519999806187115e-06,6 
+uniform_cost_search,Mehadia,Urziceni,2.185000030294759e-05,6 
+iterative_deepening,Mehadia,Urziceni,4.2660000144678636e-05,6 
+greedy_search,Mehadia,Urziceni,4.096000011486467e-05,6 
+a_star_search,Mehadia,Urziceni,6.65999998091138e-05,6 
+breadth_first_search,Mehadia,Pitesti,9.900000077323056e-06,4 
+depth_first_search,Mehadia,Pitesti,2.9599999834317713e-06,4 
+uniform_cost_search,Mehadia,Pitesti,9.209999916492961e-06,4 
+iterative_deepening,Mehadia,Pitesti,1.1249999806750565e-05,4 
+greedy_search,Mehadia,Pitesti,1.7860000298242085e-05,4 
+a_star_search,Mehadia,Pitesti,4.39199999163975e-05,4 
+breadth_first_search,Hirsova,Iasi,1.069999980245484e-05,4 
+depth_first_search,Hirsova,Iasi,5.949999831500463e-06,4 
+uniform_cost_search,Hirsova,Iasi,2.1079999714856968e-05,4 
+iterative_deepening,Hirsova,Iasi,1.3209999815444462e-05,4 
+greedy_search,Hirsova,Iasi,1.8020000061369502e-05,4 
+a_star_search,Hirsova,Iasi,4.977000025974121e-05,4 
+breadth_first_search,Hirsova,Urziceni,2.9200000426499173e-06,2 
+depth_first_search,Hirsova,Urziceni,2.2000000171829016e-06,2 
+uniform_cost_search,Hirsova,Urziceni,2.949999543488957e-06,2 
+iterative_deepening,Hirsova,Urziceni,3.179999839630909e-06,2 
+greedy_search,Hirsova,Urziceni,1.418999963789247e-05,2 
+a_star_search,Hirsova,Urziceni,2.3119999787013513e-05,2 
+breadth_first_search,Hirsova,Pitesti,1.0040000233857427e-05,4 
+depth_first_search,Hirsova,Pitesti,1.264000020455569e-05,4 
+uniform_cost_search,Hirsova,Pitesti,8.780000098340678e-06,4 
+iterative_deepening,Hirsova,Pitesti,1.3010000111535192e-05,4 
+greedy_search,Hirsova,Pitesti,2.3869999859016387e-05,4 
+a_star_search,Hirsova,Pitesti,4.379000001790701e-05,4 
+breadth_first_search,Iasi,Urziceni,4.25000016548438e-06,3 
+depth_first_search,Iasi,Urziceni,2.989999848068692e-06,3 
+uniform_cost_search,Iasi,Urziceni,3.980000110459514e-06,3 
+iterative_deepening,Iasi,Urziceni,1.139999985753093e-05,3 
+greedy_search,Iasi,Urziceni,1.131999961216934e-05,3 
+a_star_search,Iasi,Urziceni,2.4499999926774763e-05,3 
+breadth_first_search,Iasi,Pitesti,1.2100000094505959e-05,5 
+depth_first_search,Iasi,Pitesti,7.159999950090423e-06,5 
+uniform_cost_search,Iasi,Pitesti,1.0660000043571927e-05,5 
+iterative_deepening,Iasi,Pitesti,2.2920000265003183e-05,5 
+greedy_search,Iasi,Pitesti,1.004999994620448e-05,0 
+a_star_search,Iasi,Pitesti,6.448999993153847e-05,5 
+breadth_first_search,Urziceni,Pitesti,8.359999992535449e-06,3 
+depth_first_search,Urziceni,Pitesti,6.359999679261818e-06,3 
+uniform_cost_search,Urziceni,Pitesti,8.919999891077168e-06,3 
+iterative_deepening,Urziceni,Pitesti,8.249999882536941e-06,3 
+greedy_search,Urziceni,Pitesti,2.0419999782461672e-05,3 
+a_star_search,Urziceni,Pitesti,3.5000000207219276e-05,3 
