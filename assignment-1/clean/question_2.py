@@ -1,8 +1,9 @@
 from collections import defaultdict
 from random import sample
-from Romania import h_longitude_latitude_distance, road_map
+# from graph import *
+from utils import romania_coord_distance_km, load_city_graph
 from utils import benchmark
-from search_algorithms import (
+from graph.search_algorithms import (
     a_star_search,
     depth_first_search,
     breadth_first_search,
@@ -11,8 +12,8 @@ from search_algorithms import (
     iterative_deepening
 )
 
-
-selected_cities = sample(road_map.nodes, 10)
+graph = load_city_graph()
+selected_cities = sample(graph.nodes, 10)
 
 
 algorithms = {}
@@ -45,18 +46,18 @@ with open('result.csv', 'w') as res:
 
             for i in range(6):
                 args = {
-                    'graph': road_map,
+                    'graph': graph,
                     'start_node': city_one,
                     'end_node': city_two
                 }
 
                 if i >= 4:
-                    args['heuristic_func'] = lambda node: h_longitude_latitude_distance(node, city_two)
+                    args['heuristic_func'] = lambda node: romania_coord_distance_km(node, city_two)
 
 
                 runtime = benchmark(algorithm=algorithms[i],args=args)[0]
                 solution_length = benchmark(algorithm=algorithms[i],args=args)[1]
-                actual_distance = h_longitude_latitude_distance(city_one, city_two)
+                actual_distance = romania_coord_distance_km(city_one, city_two)
 
                 average[algorithms[i].__name__][0] += runtime
                 average[algorithms[i].__name__][1] += solution_length
