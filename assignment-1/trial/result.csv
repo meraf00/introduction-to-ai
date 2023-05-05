@@ -1,271 +1,271 @@
-Algorithm            ,City One  ,City Two  ,Average Time           ,Path Length
-breadth_first_search ,Vaslui    ,Sibiu     ,5.085000011604279e-05  ,          5
-depth_first_search   ,Vaslui    ,Sibiu     ,2.2090000129537657e-05 ,         11
-uniform_cost_search  ,Vaslui    ,Sibiu     ,2.9060000269964802e-05 ,          6
-iterative_deepening  ,Vaslui    ,Sibiu     ,3.636000001279171e-05  ,          5
-greedy_search        ,Vaslui    ,Sibiu     ,3.479000006336719e-05  ,          5
-a_star_search        ,Vaslui    ,Sibiu     ,9.7000000278058e-05    ,          6
-breadth_first_search ,Vaslui    ,Giurgiu   ,2.736999995249789e-05  ,          4
-depth_first_search   ,Vaslui    ,Giurgiu   ,1.5640000128769316e-05 ,          4
-uniform_cost_search  ,Vaslui    ,Giurgiu   ,1.269999993382953e-05  ,          4
-iterative_deepening  ,Vaslui    ,Giurgiu   ,2.2790000366512685e-05 ,          4
-greedy_search        ,Vaslui    ,Giurgiu   ,3.665000003820751e-05  ,          4
-a_star_search        ,Vaslui    ,Giurgiu   ,8.321999957843218e-05  ,          4
-breadth_first_search ,Vaslui    ,Hirsova   ,9.079999836103525e-06  ,          3
-depth_first_search   ,Vaslui    ,Hirsova   ,4.040000021632295e-06  ,          3
-uniform_cost_search  ,Vaslui    ,Hirsova   ,8.280000110971742e-06  ,          3
-iterative_deepening  ,Vaslui    ,Hirsova   ,1.4100000225880648e-05 ,          3
-greedy_search        ,Vaslui    ,Hirsova   ,1.4360000386659522e-05 ,          3
-a_star_search        ,Vaslui    ,Hirsova   ,2.8620000011869707e-05 ,          3
-breadth_first_search ,Vaslui    ,Urziceni  ,2.799999674607534e-06  ,          2
-depth_first_search   ,Vaslui    ,Urziceni  ,2.739999945333693e-06  ,          2
-uniform_cost_search  ,Vaslui    ,Urziceni  ,3.419999666220974e-06  ,          2
-iterative_deepening  ,Vaslui    ,Urziceni  ,3.0299999707494864e-06 ,          2
-greedy_search        ,Vaslui    ,Urziceni  ,1.8669999735720922e-05 ,          2
-a_star_search        ,Vaslui    ,Urziceni  ,2.0709999989776407e-05 ,          2
-breadth_first_search ,Vaslui    ,Eforie    ,1.167999998870073e-05  ,          4
-depth_first_search   ,Vaslui    ,Eforie    ,4.620000072463881e-06  ,          4
-uniform_cost_search  ,Vaslui    ,Eforie    ,1.1750000339816324e-05 ,          4
-iterative_deepening  ,Vaslui    ,Eforie    ,1.2310000238358043e-05 ,          4
-greedy_search        ,Vaslui    ,Eforie    ,1.720000036584679e-05  ,          4
-a_star_search        ,Vaslui    ,Eforie    ,3.8549999953829686e-05 ,          4
-breadth_first_search ,Vaslui    ,Lugoj     ,2.621000003273366e-05  ,          8
-depth_first_search   ,Vaslui    ,Lugoj     ,1.1480000102892518e-05 ,          8
-uniform_cost_search  ,Vaslui    ,Lugoj     ,3.557999989425298e-05  ,          8
-iterative_deepening  ,Vaslui    ,Lugoj     ,0.00014041999984328867 ,          8
-greedy_search        ,Vaslui    ,Lugoj     ,4.966000033164164e-05  ,          8
-a_star_search        ,Vaslui    ,Lugoj     ,0.00016509999986737966 ,          8
-breadth_first_search ,Vaslui    ,Bucharest ,1.5259999781847e-05    ,          3
-depth_first_search   ,Vaslui    ,Bucharest ,7.60000039008446e-06   ,          3
-uniform_cost_search  ,Vaslui    ,Bucharest ,5.870000313734635e-06  ,          3
-iterative_deepening  ,Vaslui    ,Bucharest ,9.48999950196594e-06   ,          3
-greedy_search        ,Vaslui    ,Bucharest ,2.080000012938399e-05  ,          3
-a_star_search        ,Vaslui    ,Bucharest ,3.909999977622647e-05  ,          3
-breadth_first_search ,Vaslui    ,Drobeta   ,2.2260000150708947e-05 ,          6
-depth_first_search   ,Vaslui    ,Drobeta   ,8.820000039122533e-06  ,          6
-uniform_cost_search  ,Vaslui    ,Drobeta   ,2.2879999778524508e-05 ,          6
-iterative_deepening  ,Vaslui    ,Drobeta   ,8.310999983223155e-05  ,          6
-greedy_search        ,Vaslui    ,Drobeta   ,3.5579999712354037e-05 ,          6
-a_star_search        ,Vaslui    ,Drobeta   ,8.206000020436477e-05  ,          6
-breadth_first_search ,Vaslui    ,Zerind    ,2.5230000210285654e-05 ,          7
-depth_first_search   ,Vaslui    ,Zerind    ,1.5409999832627364e-05 ,         13
-uniform_cost_search  ,Vaslui    ,Zerind    ,2.9529999847e-05       ,          8
-iterative_deepening  ,Vaslui    ,Zerind    ,6.220999948709504e-05  ,          7
-greedy_search        ,Vaslui    ,Zerind    ,5.2860000141663474e-05 ,          7
-a_star_search        ,Vaslui    ,Zerind    ,0.00013042999999015591 ,          8
-breadth_first_search ,Sibiu     ,Giurgiu   ,2.2739999985788016e-05 ,          4
-depth_first_search   ,Sibiu     ,Giurgiu   ,1.3689999832422473e-05 ,          4
-uniform_cost_search  ,Sibiu     ,Giurgiu   ,5.363000000215834e-05  ,          5
-iterative_deepening  ,Sibiu     ,Giurgiu   ,3.676999986055307e-05  ,          4
-greedy_search        ,Sibiu     ,Giurgiu   ,5.8679999892774506e-05 ,          5
-a_star_search        ,Sibiu     ,Giurgiu   ,6.094999989727512e-05  ,          5
-breadth_first_search ,Sibiu     ,Hirsova   ,2.5899999855028e-05    ,          5
-depth_first_search   ,Sibiu     ,Hirsova   ,7.429999823216349e-06  ,          5
-uniform_cost_search  ,Sibiu     ,Hirsova   ,3.387999986443901e-05  ,          6
-iterative_deepening  ,Sibiu     ,Hirsova   ,4.351999959908426e-05  ,          5
-greedy_search        ,Sibiu     ,Hirsova   ,3.216000022803201e-05  ,          5
-a_star_search        ,Sibiu     ,Hirsova   ,8.270999951491831e-05  ,          6
-breadth_first_search ,Sibiu     ,Urziceni  ,1.8960000124934596e-05 ,          4
-depth_first_search   ,Sibiu     ,Urziceni  ,3.1199997465591878e-06 ,          4
-uniform_cost_search  ,Sibiu     ,Urziceni  ,2.0140000378887636e-05 ,          5
-iterative_deepening  ,Sibiu     ,Urziceni  ,3.91999996281811e-05   ,          4
-greedy_search        ,Sibiu     ,Urziceni  ,2.5679999998828863e-05 ,          4
-a_star_search        ,Sibiu     ,Urziceni  ,6.52000000627595e-05   ,          5
-breadth_first_search ,Sibiu     ,Eforie    ,3.6860000000160654e-05 ,          6
-depth_first_search   ,Sibiu     ,Eforie    ,9.160000445262995e-06  ,          6
-uniform_cost_search  ,Sibiu     ,Eforie    ,4.313000026741065e-05  ,          7
-iterative_deepening  ,Sibiu     ,Eforie    ,0.00010909000011452007 ,          6
-greedy_search        ,Sibiu     ,Eforie    ,4.283999987819698e-05  ,          6
-a_star_search        ,Sibiu     ,Eforie    ,9.58300001002499e-05   ,          7
-breadth_first_search ,Sibiu     ,Lugoj     ,1.49500003317371e-05   ,          4
-depth_first_search   ,Sibiu     ,Lugoj     ,1.0119999933522194e-05 ,          8
-uniform_cost_search  ,Sibiu     ,Lugoj     ,2.9859999449399767e-05 ,          4
-iterative_deepening  ,Sibiu     ,Lugoj     ,2.0979999681003393e-05 ,          4
-greedy_search        ,Sibiu     ,Lugoj     ,2.4559999837947542e-05 ,          4
-a_star_search        ,Sibiu     ,Lugoj     ,7.4740000309248e-05    ,          4
-breadth_first_search ,Sibiu     ,Bucharest ,1.4550000014423858e-05 ,          3
-depth_first_search   ,Sibiu     ,Bucharest ,2.3399999918183314e-06 ,          3
-uniform_cost_search  ,Sibiu     ,Bucharest ,1.4720000035595148e-05 ,          4
-iterative_deepening  ,Sibiu     ,Bucharest ,1.2059999789926223e-05 ,          3
-greedy_search        ,Sibiu     ,Bucharest ,3.053000018553576e-05  ,          4
-a_star_search        ,Sibiu     ,Bucharest ,5.393999981606612e-05  ,          4
-breadth_first_search ,Sibiu     ,Drobeta   ,2.0040000345034058e-05 ,          4
-depth_first_search   ,Sibiu     ,Drobeta   ,8.779999916441739e-06  ,          6
-uniform_cost_search  ,Sibiu     ,Drobeta   ,1.9330000213813037e-05 ,          4
-iterative_deepening  ,Sibiu     ,Drobeta   ,3.116000007139519e-05  ,          4
-greedy_search        ,Sibiu     ,Drobeta   ,2.618000016809674e-05  ,          4
-a_star_search        ,Sibiu     ,Drobeta   ,6.861000019853236e-05  ,          4
-breadth_first_search ,Sibiu     ,Zerind    ,9.530000170343556e-06  ,          3
-depth_first_search   ,Sibiu     ,Zerind    ,1.2389999938022811e-05 ,         11
-uniform_cost_search  ,Sibiu     ,Zerind    ,1.8289999752596485e-05 ,          3
-iterative_deepening  ,Sibiu     ,Zerind    ,1.768000001902692e-05  ,          3
-greedy_search        ,Sibiu     ,Zerind    ,2.6799999795912298e-05 ,          3
-a_star_search        ,Sibiu     ,Zerind    ,4.9949999811360614e-05 ,          3
-breadth_first_search ,Giurgiu   ,Hirsova   ,1.216000018757768e-05  ,          4
-depth_first_search   ,Giurgiu   ,Hirsova   ,8.320000233652536e-06  ,          4
-uniform_cost_search  ,Giurgiu   ,Hirsova   ,7.610000102431513e-06  ,          4
-iterative_deepening  ,Giurgiu   ,Hirsova   ,2.2340000032272656e-05 ,          4
-greedy_search        ,Giurgiu   ,Hirsova   ,2.023999986704439e-05  ,          4
-a_star_search        ,Giurgiu   ,Hirsova   ,4.047999955218984e-05  ,          4
-breadth_first_search ,Giurgiu   ,Urziceni  ,6.530000428028871e-06  ,          3
-depth_first_search   ,Giurgiu   ,Urziceni  ,4.11000019084895e-06   ,          3
-uniform_cost_search  ,Giurgiu   ,Urziceni  ,4.460000309336465e-06  ,          3
-iterative_deepening  ,Giurgiu   ,Urziceni  ,2.187999998568557e-05  ,          3
-greedy_search        ,Giurgiu   ,Urziceni  ,2.2250000074564014e-05 ,          3
-a_star_search        ,Giurgiu   ,Urziceni  ,2.6810000417754053e-05 ,          3
-breadth_first_search ,Giurgiu   ,Eforie    ,1.8849999833037145e-05 ,          5
-depth_first_search   ,Giurgiu   ,Eforie    ,7.400000140478369e-06  ,          5
-uniform_cost_search  ,Giurgiu   ,Eforie    ,1.4039999405213166e-05 ,          5
-iterative_deepening  ,Giurgiu   ,Eforie    ,3.0280000100901815e-05 ,          5
-greedy_search        ,Giurgiu   ,Eforie    ,2.338999966013944e-05  ,          5
-a_star_search        ,Giurgiu   ,Eforie    ,4.3650000043271576e-05 ,          5
-breadth_first_search ,Giurgiu   ,Lugoj     ,2.5469999854976777e-05 ,          7
-depth_first_search   ,Giurgiu   ,Lugoj     ,8.720000369066839e-06  ,          7
-uniform_cost_search  ,Giurgiu   ,Lugoj     ,3.686999953060877e-05  ,          7
-iterative_deepening  ,Giurgiu   ,Lugoj     ,7.612000008521136e-05  ,          7
-greedy_search        ,Giurgiu   ,Lugoj     ,4.101999984413851e-05  ,          7
-a_star_search        ,Giurgiu   ,Lugoj     ,0.0004108899998755078  ,          7
-breadth_first_search ,Giurgiu   ,Bucharest ,2.8399999791872688e-06 ,          2
-depth_first_search   ,Giurgiu   ,Bucharest ,1.449999945180025e-06  ,          2
-uniform_cost_search  ,Giurgiu   ,Bucharest ,1.9099999917671086e-06 ,          2
-iterative_deepening  ,Giurgiu   ,Bucharest ,5.190000410948414e-06  ,          2
-greedy_search        ,Giurgiu   ,Bucharest ,6.609999945794698e-06  ,          2
-a_star_search        ,Giurgiu   ,Bucharest ,1.544999995530816e-05  ,          2
-breadth_first_search ,Giurgiu   ,Drobeta   ,1.807999997254228e-05  ,          5
-depth_first_search   ,Giurgiu   ,Drobeta   ,7.60000002628658e-06   ,          5
-uniform_cost_search  ,Giurgiu   ,Drobeta   ,2.0620000032067765e-05 ,          5
-iterative_deepening  ,Giurgiu   ,Drobeta   ,2.6570000045467168e-05 ,          5
-greedy_search        ,Giurgiu   ,Drobeta   ,2.6470000193512533e-05 ,          5
-a_star_search        ,Giurgiu   ,Drobeta   ,6.34999998510466e-05   ,          5
-breadth_first_search ,Giurgiu   ,Zerind    ,2.0189999850117603e-05 ,          6
-depth_first_search   ,Giurgiu   ,Zerind    ,1.4139999802864622e-05 ,         12
-uniform_cost_search  ,Giurgiu   ,Zerind    ,3.352000021550339e-05  ,          7
-iterative_deepening  ,Giurgiu   ,Zerind    ,4.5649999810848386e-05 ,          6
-greedy_search        ,Giurgiu   ,Zerind    ,3.512999992381083e-05  ,          6
-a_star_search        ,Giurgiu   ,Zerind    ,8.737999960430897e-05  ,          7
-breadth_first_search ,Hirsova   ,Urziceni  ,2.7599999157246202e-06 ,          2
-depth_first_search   ,Hirsova   ,Urziceni  ,2.2000000171829016e-06 ,          2
-uniform_cost_search  ,Hirsova   ,Urziceni  ,4.800000351679046e-06  ,          2
-iterative_deepening  ,Hirsova   ,Urziceni  ,9.569999929226469e-06  ,          2
-greedy_search        ,Hirsova   ,Urziceni  ,7.450000339304097e-06  ,          2
-a_star_search        ,Hirsova   ,Urziceni  ,1.6599999617028517e-05 ,          2
-breadth_first_search ,Hirsova   ,Eforie    ,4.0799999624141495e-06 ,          2
-depth_first_search   ,Hirsova   ,Eforie    ,1.4500001270789653e-06 ,          2
-uniform_cost_search  ,Hirsova   ,Eforie    ,2.3200002033263447e-06 ,          2
-iterative_deepening  ,Hirsova   ,Eforie    ,2.990000029967632e-06  ,          2
-greedy_search        ,Hirsova   ,Eforie    ,1.1639999502222054e-05 ,          2
-a_star_search        ,Hirsova   ,Eforie    ,1.9900000006600747e-05 ,          2
-breadth_first_search ,Hirsova   ,Lugoj     ,2.5810000079218298e-05 ,          8
-depth_first_search   ,Hirsova   ,Lugoj     ,9.960000170394778e-06  ,          8
-uniform_cost_search  ,Hirsova   ,Lugoj     ,3.08299999232986e-05   ,          8
-iterative_deepening  ,Hirsova   ,Lugoj     ,8.533000018360327e-05  ,          8
-greedy_search        ,Hirsova   ,Lugoj     ,4.825999985769158e-05  ,          8
-a_star_search        ,Hirsova   ,Lugoj     ,0.0001600899997356464  ,          8
-breadth_first_search ,Hirsova   ,Bucharest ,5.060000148660038e-06  ,          3
-depth_first_search   ,Hirsova   ,Bucharest ,5.620000047201757e-06  ,          3
-uniform_cost_search  ,Hirsova   ,Bucharest ,6.320000102277845e-06  ,          3
-iterative_deepening  ,Hirsova   ,Bucharest ,1.5690000145696105e-05 ,          3
-greedy_search        ,Hirsova   ,Bucharest ,1.745000008668285e-05  ,          3
-a_star_search        ,Hirsova   ,Bucharest ,2.64900003458024e-05   ,          3
-breadth_first_search ,Hirsova   ,Drobeta   ,1.97600003957632e-05   ,          6
-depth_first_search   ,Hirsova   ,Drobeta   ,8.490000072924887e-06  ,          6
-uniform_cost_search  ,Hirsova   ,Drobeta   ,2.0679999761341605e-05 ,          6
-iterative_deepening  ,Hirsova   ,Drobeta   ,4.50400004410767e-05   ,          6
-greedy_search        ,Hirsova   ,Drobeta   ,4.014999976789113e-05  ,          6
-a_star_search        ,Hirsova   ,Drobeta   ,7.289000004675472e-05  ,          6
-breadth_first_search ,Hirsova   ,Zerind    ,2.5860000278044026e-05 ,          7
-depth_first_search   ,Hirsova   ,Zerind    ,1.5559999519609845e-05 ,         13
-uniform_cost_search  ,Hirsova   ,Zerind    ,3.12600002871477e-05   ,          8
-iterative_deepening  ,Hirsova   ,Zerind    ,7.11800003045937e-05   ,          7
-greedy_search        ,Hirsova   ,Zerind    ,4.282000008970499e-05  ,          7
-a_star_search        ,Hirsova   ,Zerind    ,0.00010652999990270473 ,          8
-breadth_first_search ,Urziceni  ,Eforie    ,1.733999997668434e-05  ,          3
-depth_first_search   ,Urziceni  ,Eforie    ,5.8799994803848675e-06 ,          3
-uniform_cost_search  ,Urziceni  ,Eforie    ,8.39000003907131e-06   ,          3
-iterative_deepening  ,Urziceni  ,Eforie    ,8.759999764151871e-06  ,          3
-greedy_search        ,Urziceni  ,Eforie    ,1.446999995096121e-05  ,          3
-a_star_search        ,Urziceni  ,Eforie    ,3.677000004245201e-05  ,          3
-breadth_first_search ,Urziceni  ,Lugoj     ,2.7640000007522757e-05 ,          7
-depth_first_search   ,Urziceni  ,Lugoj     ,9.359999967273325e-06  ,          7
-uniform_cost_search  ,Urziceni  ,Lugoj     ,3.2610000016575216e-05 ,          7
-iterative_deepening  ,Urziceni  ,Lugoj     ,8.241000014095335e-05  ,          7
-greedy_search        ,Urziceni  ,Lugoj     ,4.1670000609883576e-05 ,          7
-a_star_search        ,Urziceni  ,Lugoj     ,0.00014226999974198407 ,          7
-breadth_first_search ,Urziceni  ,Bucharest ,3.2199999623117036e-06 ,          2
-depth_first_search   ,Urziceni  ,Bucharest ,4.689999877882656e-06  ,          2
-uniform_cost_search  ,Urziceni  ,Bucharest ,1.2350000361038838e-05 ,          2
-iterative_deepening  ,Urziceni  ,Bucharest ,3.730000025825575e-06  ,          2
-greedy_search        ,Urziceni  ,Bucharest ,1.2120000064896885e-05 ,          2
-a_star_search        ,Urziceni  ,Bucharest ,1.9830000019283035e-05 ,          2
-breadth_first_search ,Urziceni  ,Drobeta   ,2.000999993470032e-05  ,          5
-depth_first_search   ,Urziceni  ,Drobeta   ,8.289999823318794e-06  ,          5
-uniform_cost_search  ,Urziceni  ,Drobeta   ,2.7040000168199187e-05 ,          5
-iterative_deepening  ,Urziceni  ,Drobeta   ,3.228999958082568e-05  ,          5
-greedy_search        ,Urziceni  ,Drobeta   ,3.804000007221475e-05  ,          5
-a_star_search        ,Urziceni  ,Drobeta   ,6.270999983826187e-05  ,          5
-breadth_first_search ,Urziceni  ,Zerind    ,2.3209999926621095e-05 ,          6
-depth_first_search   ,Urziceni  ,Zerind    ,1.4940000255592167e-05 ,         12
-uniform_cost_search  ,Urziceni  ,Zerind    ,2.9330000143090728e-05 ,          7
-iterative_deepening  ,Urziceni  ,Zerind    ,6.134999985079048e-05  ,          6
-greedy_search        ,Urziceni  ,Zerind    ,3.834999988612253e-05  ,          6
-a_star_search        ,Urziceni  ,Zerind    ,9.274000021832762e-05  ,          7
-breadth_first_search ,Eforie    ,Lugoj     ,2.5579999964975285e-05 ,          9
-depth_first_search   ,Eforie    ,Lugoj     ,9.40000008995412e-06   ,          9
-uniform_cost_search  ,Eforie    ,Lugoj     ,3.831000012723962e-05  ,          9
-iterative_deepening  ,Eforie    ,Lugoj     ,9.301999980380061e-05  ,          9
-greedy_search        ,Eforie    ,Lugoj     ,4.5909999971627255e-05 ,          9
-a_star_search        ,Eforie    ,Lugoj     ,0.00015136999973037747 ,          9
-breadth_first_search ,Eforie    ,Bucharest ,4.849999822909013e-06  ,          4
-depth_first_search   ,Eforie    ,Bucharest ,4.749999970954377e-06  ,          4
-uniform_cost_search  ,Eforie    ,Bucharest ,4.509999962465372e-06  ,          4
-iterative_deepening  ,Eforie    ,Bucharest ,7.919999552541412e-06  ,          4
-greedy_search        ,Eforie    ,Bucharest ,2.1629999719152692e-05 ,          4
-a_star_search        ,Eforie    ,Bucharest ,3.008999992744066e-05  ,          4
-breadth_first_search ,Eforie    ,Drobeta   ,2.2360000184562522e-05 ,          7
-depth_first_search   ,Eforie    ,Drobeta   ,8.260000140580814e-06  ,          7
-uniform_cost_search  ,Eforie    ,Drobeta   ,2.0930000209773426e-05 ,          7
-iterative_deepening  ,Eforie    ,Drobeta   ,4.074000025866553e-05  ,          7
-greedy_search        ,Eforie    ,Drobeta   ,3.7679999877582304e-05 ,          7
-a_star_search        ,Eforie    ,Drobeta   ,8.307999960379674e-05  ,          7
-breadth_first_search ,Eforie    ,Zerind    ,2.096999996865634e-05  ,          8
-depth_first_search   ,Eforie    ,Zerind    ,1.70300003446755e-05   ,         14
-uniform_cost_search  ,Eforie    ,Zerind    ,3.7590000101772605e-05 ,          9
-iterative_deepening  ,Eforie    ,Zerind    ,5.8879999960481656e-05 ,          8
-greedy_search        ,Eforie    ,Zerind    ,4.40800000433228e-05   ,          8
-a_star_search        ,Eforie    ,Zerind    ,9.99999996565748e-05   ,          9
-breadth_first_search ,Lugoj     ,Bucharest ,1.7750000006344634e-05 ,          6
-depth_first_search   ,Lugoj     ,Bucharest ,4.749999607156496e-06  ,          6
-uniform_cost_search  ,Lugoj     ,Bucharest ,1.821000005293172e-05  ,          6
-iterative_deepening  ,Lugoj     ,Bucharest ,3.428999934840249e-05  ,          6
-greedy_search        ,Lugoj     ,Bucharest ,2.7269999918644316e-05 ,          6
-a_star_search        ,Lugoj     ,Bucharest ,6.239999966055621e-05  ,          6
-breadth_first_search ,Lugoj     ,Drobeta   ,6.369999937305693e-06  ,          3
-depth_first_search   ,Lugoj     ,Drobeta   ,2.1500000002561137e-06 ,          3
-uniform_cost_search  ,Lugoj     ,Drobeta   ,4.599999920174014e-06  ,          3
-iterative_deepening  ,Lugoj     ,Drobeta   ,1.2709999100479764e-05 ,          3
-greedy_search        ,Lugoj     ,Drobeta   ,1.1110000014014076e-05 ,          3
-a_star_search        ,Lugoj     ,Drobeta   ,3.0029999288672114e-05 ,          3
-breadth_first_search ,Lugoj     ,Zerind    ,7.439999717462342e-06  ,          4
-depth_first_search   ,Lugoj     ,Zerind    ,1.2869999955000821e-05 ,         10
-uniform_cost_search  ,Lugoj     ,Zerind    ,1.1960000119870528e-05 ,          4
-iterative_deepening  ,Lugoj     ,Zerind    ,1.326000037806807e-05  ,          4
-greedy_search        ,Lugoj     ,Zerind    ,1.7640000260144005e-05 ,          4
-a_star_search        ,Lugoj     ,Zerind    ,4.265000025043264e-05  ,          4
-breadth_first_search ,Bucharest ,Drobeta   ,1.7860000116343145e-05 ,          4
-depth_first_search   ,Bucharest ,Drobeta   ,7.339999865507707e-06  ,          4
-uniform_cost_search  ,Bucharest ,Drobeta   ,2.0729999596369454e-05 ,          4
-iterative_deepening  ,Bucharest ,Drobeta   ,1.9719999545486645e-05 ,          4
-greedy_search        ,Bucharest ,Drobeta   ,3.5830000160785855e-05 ,          4
-a_star_search        ,Bucharest ,Drobeta   ,5.3109999862499534e-05 ,          4
-breadth_first_search ,Bucharest ,Zerind    ,2.880000010918593e-05  ,          5
-depth_first_search   ,Bucharest ,Zerind    ,1.4180000289343297e-05 ,         11
-uniform_cost_search  ,Bucharest ,Zerind    ,3.184000015608035e-05  ,          6
-iterative_deepening  ,Bucharest ,Zerind    ,4.379000001790701e-05  ,          5
-greedy_search        ,Bucharest ,Zerind    ,3.222999985155184e-05  ,          5
-a_star_search        ,Bucharest ,Zerind    ,8.387000016227831e-05  ,          6
-breadth_first_search ,Drobeta   ,Zerind    ,2.1800000104121865e-05 ,          6
-depth_first_search   ,Drobeta   ,Zerind    ,1.6909999976633118e-05 ,          8
-uniform_cost_search  ,Drobeta   ,Zerind    ,2.006999966397416e-05  ,          6
-iterative_deepening  ,Drobeta   ,Zerind    ,5.930999996053288e-05  ,          6
-greedy_search        ,Drobeta   ,Zerind    ,2.6080000134243163e-05 ,          6
-a_star_search        ,Drobeta   ,Zerind    ,6.77600004564738e-05   ,          6
+Algorithm,City One,City Two,Average Time,Path Length
+breadth_first_search,Vaslui,Lugoj,0.0002991899999869929,7
+depth_first_search,Vaslui,Lugoj,0.00010297000003447465,7
+uniform_cost_search,Vaslui,Lugoj,0.00030187000002115385,7
+iterative_deepening,Vaslui,Lugoj,0.0008459200000288547,7
+greedy_search,Vaslui,Lugoj,0.0013700700000754296,7
+a_star_search,Vaslui,Lugoj,0.0015063099999679253,7
+breadth_first_search,Vaslui,Urziceni,1.8769999951473437e-05,1
+depth_first_search,Vaslui,Urziceni,2.080999993268051e-05,1
+uniform_cost_search,Vaslui,Urziceni,2.475000010235817e-05,1
+iterative_deepening,Vaslui,Urziceni,4.061999989062315e-05,1
+greedy_search,Vaslui,Urziceni,0.00016516000005140086,1
+a_star_search,Vaslui,Urziceni,0.00011063999995712948,1
+breadth_first_search,Vaslui,Fagaras,5.8770000077856824e-05,3
+depth_first_search,Vaslui,Fagaras,6.513999996968778e-05,11
+uniform_cost_search,Vaslui,Fagaras,5.3839999964111485e-05,3
+iterative_deepening,Vaslui,Fagaras,7.51999999920372e-05,3
+greedy_search,Vaslui,Fagaras,0.00019190999996681056,3
+a_star_search,Vaslui,Fagaras,0.0006147999999484455,3
+breadth_first_search,Vaslui,Zerind,0.0001404000000547967,6
+depth_first_search,Vaslui,Zerind,6.254999993871024e-05,12
+uniform_cost_search,Vaslui,Zerind,0.00047619999995731634,7
+iterative_deepening,Vaslui,Zerind,0.0004197399999611662,6
+greedy_search,Vaslui,Zerind,0.0003568999999515654,6
+a_star_search,Vaslui,Zerind,0.00040103999999701044,7
+breadth_first_search,Vaslui,Pitesti,6.340999998428742e-05,3
+depth_first_search,Vaslui,Pitesti,5.9319999945728344e-05,3
+uniform_cost_search,Vaslui,Pitesti,0.0001164900000730995,3
+iterative_deepening,Vaslui,Pitesti,9.319000005234557e-05,3
+greedy_search,Vaslui,Pitesti,0.0002256799999940995,3
+a_star_search,Vaslui,Pitesti,0.00014048999987608112,3
+breadth_first_search,Vaslui,Neamt,3.0259999994086685e-05,2
+depth_first_search,Vaslui,Neamt,9.010000030684751e-06,2
+uniform_cost_search,Vaslui,Neamt,1.8829999999070423e-05,2
+iterative_deepening,Vaslui,Neamt,2.5039999991349758e-05,2
+greedy_search,Vaslui,Neamt,9.311000003435766e-05,2
+a_star_search,Vaslui,Neamt,7.159999995565158e-05,2
+breadth_first_search,Vaslui,Mehadia,5.238000007921073e-05,6
+depth_first_search,Vaslui,Mehadia,2.1710000009989016e-05,6
+uniform_cost_search,Vaslui,Mehadia,5.2000000005136825e-05,6
+iterative_deepening,Vaslui,Mehadia,0.00011232999995627324,6
+greedy_search,Vaslui,Mehadia,0.000301880000051824,6
+a_star_search,Vaslui,Mehadia,0.0002692499999739084,6
+breadth_first_search,Vaslui,Oradea,2.882000003410212e-05,5
+depth_first_search,Vaslui,Oradea,2.644999999574793e-05,11
+uniform_cost_search,Vaslui,Oradea,4.10699999974895e-05,6
+iterative_deepening,Vaslui,Oradea,6.907000001774578e-05,5
+greedy_search,Vaslui,Oradea,0.00015719000002718532,5
+a_star_search,Vaslui,Oradea,0.00014069999997445848,6
+breadth_first_search,Vaslui,Iasi,6.69999999445281e-06,1
+depth_first_search,Vaslui,Iasi,2.5899999855028e-06,1
+uniform_cost_search,Vaslui,Iasi,4.290000015316764e-06,1
+iterative_deepening,Vaslui,Iasi,5.009999995309045e-06,1
+greedy_search,Vaslui,Iasi,2.6679999973566736e-05,1
+a_star_search,Vaslui,Iasi,2.6399999978821142e-05,1
+breadth_first_search,Lugoj,Urziceni,3.930000011678203e-05,6
+depth_first_search,Lugoj,Urziceni,9.919999956764514e-06,6
+uniform_cost_search,Lugoj,Urziceni,3.514999993967649e-05,6
+iterative_deepening,Lugoj,Urziceni,0.00019112999998469605,6
+greedy_search,Lugoj,Urziceni,0.00021037000001342677,6
+a_star_search,Lugoj,Urziceni,0.00015209999992293888,6
+breadth_first_search,Lugoj,Fagaras,2.2040000067136135e-05,4
+depth_first_search,Lugoj,Fagaras,1.6250000044237822e-05,6
+uniform_cost_search,Lugoj,Fagaras,2.596999997876992e-05,4
+iterative_deepening,Lugoj,Fagaras,3.9569999898958486e-05,4
+greedy_search,Lugoj,Fagaras,0.00013063000005786307,6
+a_star_search,Lugoj,Fagaras,0.00017389999998158602,4
+breadth_first_search,Lugoj,Zerind,1.1660000109259271e-05,3
+depth_first_search,Lugoj,Zerind,3.9150000066001664e-05,9
+uniform_cost_search,Lugoj,Zerind,2.4529999927835887e-05,3
+iterative_deepening,Lugoj,Zerind,4.169999997429841e-05,3
+greedy_search,Lugoj,Zerind,9.562000000187254e-05,3
+a_star_search,Lugoj,Zerind,9.321999991698248e-05,3
+breadth_first_search,Lugoj,Pitesti,4.486999996515806e-05,4
+depth_first_search,Lugoj,Pitesti,1.1150000000270666e-05,4
+uniform_cost_search,Lugoj,Pitesti,3.524999992805533e-05,4
+iterative_deepening,Lugoj,Pitesti,5.544000014197081e-05,4
+greedy_search,Lugoj,Pitesti,0.00011190000000169676,4
+a_star_search,Lugoj,Pitesti,8.027000012589269e-05,4
+breadth_first_search,Lugoj,Neamt,5.958000001555774e-05,9
+depth_first_search,Lugoj,Neamt,1.233000002685003e-05,9
+uniform_cost_search,Lugoj,Neamt,4.2219999977533006e-05,9
+iterative_deepening,Lugoj,Neamt,0.0005959200000688724,9
+greedy_search,Lugoj,Neamt,0.00023904000004222327,11
+a_star_search,Lugoj,Neamt,0.00019836000001305365,9
+breadth_first_search,Lugoj,Mehadia,5.250000049272785e-06,1
+depth_first_search,Lugoj,Mehadia,2.229999927294557e-06,1
+uniform_cost_search,Lugoj,Mehadia,3.6100000215810724e-06,1
+iterative_deepening,Lugoj,Mehadia,1.9530000099621247e-05,1
+greedy_search,Lugoj,Mehadia,3.5290000050736124e-05,1
+a_star_search,Lugoj,Mehadia,3.520000004755275e-05,1
+breadth_first_search,Lugoj,Oradea,3.16099999963626e-05,4
+depth_first_search,Lugoj,Oradea,3.977000005761511e-05,10
+uniform_cost_search,Lugoj,Oradea,3.0909999941286516e-05,4
+iterative_deepening,Lugoj,Oradea,5.157999999028107e-05,4
+greedy_search,Lugoj,Oradea,8.248000008279633e-05,4
+a_star_search,Lugoj,Oradea,6.213000006027869e-05,4
+breadth_first_search,Lugoj,Iasi,4.7749999930601915e-05,8
+depth_first_search,Lugoj,Iasi,1.025999995363236e-05,8
+uniform_cost_search,Lugoj,Iasi,3.7029999975857206e-05,8
+iterative_deepening,Lugoj,Iasi,0.00024187000003621505,8
+greedy_search,Lugoj,Iasi,0.0001606899999842426,8
+a_star_search,Lugoj,Iasi,0.0001782700000148907,8
+breadth_first_search,Urziceni,Fagaras,9.820000104809879e-06,2
+depth_first_search,Urziceni,Fagaras,1.889999998638814e-05,10
+uniform_cost_search,Urziceni,Fagaras,1.8839999984265888e-05,2
+iterative_deepening,Urziceni,Fagaras,1.131999997596722e-05,2
+greedy_search,Urziceni,Fagaras,5.72699999793258e-05,2
+a_star_search,Urziceni,Fagaras,5.5950000023585746e-05,2
+breadth_first_search,Urziceni,Zerind,2.9539999968619667e-05,5
+depth_first_search,Urziceni,Zerind,2.243999997517676e-05,11
+uniform_cost_search,Urziceni,Zerind,4.1759999976420656e-05,6
+iterative_deepening,Urziceni,Zerind,7.520999997723266e-05,5
+greedy_search,Urziceni,Zerind,0.00011866000004374655,5
+a_star_search,Urziceni,Zerind,0.000237959999958548,6
+breadth_first_search,Urziceni,Pitesti,2.003999998123618e-05,2
+depth_first_search,Urziceni,Pitesti,1.7240000033780234e-05,2
+uniform_cost_search,Urziceni,Pitesti,2.1560000050158123e-05,2
+iterative_deepening,Urziceni,Pitesti,2.227000004495494e-05,2
+greedy_search,Urziceni,Pitesti,5.71499999750813e-05,2
+a_star_search,Urziceni,Pitesti,4.298999997445208e-05,2
+breadth_first_search,Urziceni,Neamt,2.181000004384259e-05,3
+depth_first_search,Urziceni,Neamt,4.3200000163778896e-06,3
+uniform_cost_search,Urziceni,Neamt,2.0140000015089753e-05,3
+iterative_deepening,Urziceni,Neamt,3.14799999614479e-05,3
+greedy_search,Urziceni,Neamt,5.403000004662317e-05,3
+a_star_search,Urziceni,Neamt,4.348999996182101e-05,3
+breadth_first_search,Urziceni,Mehadia,3.4579999964989835e-05,5
+depth_first_search,Urziceni,Mehadia,1.3089999993098899e-05,5
+uniform_cost_search,Urziceni,Mehadia,3.4819999973478845e-05,5
+iterative_deepening,Urziceni,Mehadia,6.722999992234691e-05,5
+greedy_search,Urziceni,Mehadia,0.0001110500000322645,5
+a_star_search,Urziceni,Mehadia,9.371000001010544e-05,5
+breadth_first_search,Urziceni,Oradea,2.2500000068248482e-05,4
+depth_first_search,Urziceni,Oradea,2.034000003732217e-05,10
+uniform_cost_search,Urziceni,Oradea,3.307999991193355e-05,5
+iterative_deepening,Urziceni,Oradea,4.871000001003267e-05,4
+greedy_search,Urziceni,Oradea,0.00010121000000253843,4
+a_star_search,Urziceni,Oradea,9.150999999292253e-05,5
+breadth_first_search,Urziceni,Iasi,1.4920000057827566e-05,2
+depth_first_search,Urziceni,Iasi,3.2800001008581603e-06,2
+uniform_cost_search,Urziceni,Iasi,1.4779999901293195e-05,2
+iterative_deepening,Urziceni,Iasi,1.1360000098648015e-05,2
+greedy_search,Urziceni,Iasi,4.207999995742284e-05,2
+a_star_search,Urziceni,Iasi,3.4800000048562654e-05,2
+breadth_first_search,Fagaras,Zerind,1.8790000103763306e-05,3
+depth_first_search,Fagaras,Zerind,2.1500000002561137e-05,11
+uniform_cost_search,Fagaras,Zerind,2.291999999215477e-05,3
+iterative_deepening,Fagaras,Zerind,3.224000001864624e-05,3
+greedy_search,Fagaras,Zerind,7.014000002527609e-05,3
+a_star_search,Fagaras,Zerind,6.154000006972638e-05,3
+breadth_first_search,Fagaras,Pitesti,1.442999996470462e-05,2
+depth_first_search,Fagaras,Pitesti,9.580000005371403e-06,2
+uniform_cost_search,Fagaras,Pitesti,1.6279999999824214e-05,3
+iterative_deepening,Fagaras,Pitesti,1.6760000016802222e-05,2
+greedy_search,Fagaras,Pitesti,7.974999994075915e-05,2
+a_star_search,Fagaras,Pitesti,8.293999981106026e-05,3
+breadth_first_search,Fagaras,Neamt,7.238000002871559e-05,5
+depth_first_search,Fagaras,Neamt,1.3010000020585722e-05,5
+uniform_cost_search,Fagaras,Neamt,7.447999992109544e-05,5
+iterative_deepening,Fagaras,Neamt,0.00012269000008018337,5
+greedy_search,Fagaras,Neamt,0.0001595599999291153,5
+a_star_search,Fagaras,Neamt,0.00012765999995281163,5
+breadth_first_search,Fagaras,Mehadia,3.6230000068826486e-05,5
+depth_first_search,Fagaras,Mehadia,1.3149999995221151e-05,5
+uniform_cost_search,Fagaras,Mehadia,3.827999994427955e-05,5
+iterative_deepening,Fagaras,Mehadia,9.939999999915017e-05,5
+greedy_search,Fagaras,Mehadia,0.00010308000000804895,5
+a_star_search,Fagaras,Mehadia,0.00013285000013638638,5
+breadth_first_search,Fagaras,Oradea,9.269999964089948e-06,2
+depth_first_search,Fagaras,Oradea,1.921999996739032e-05,10
+uniform_cost_search,Fagaras,Oradea,1.4570000075764256e-05,2
+iterative_deepening,Fagaras,Oradea,1.0350000047765207e-05,2
+greedy_search,Fagaras,Oradea,4.960999995091697e-05,2
+a_star_search,Fagaras,Oradea,3.901000000041677e-05,2
+breadth_first_search,Fagaras,Iasi,3.4409999943818545e-05,4
+depth_first_search,Fagaras,Iasi,5.5499999234598365e-06,4
+uniform_cost_search,Fagaras,Iasi,3.869000006488932e-05,4
+iterative_deepening,Fagaras,Iasi,5.729999998038693e-05,4
+greedy_search,Fagaras,Iasi,0.0001114099999085738,4
+a_star_search,Fagaras,Iasi,9.263000001737964e-05,4
+breadth_first_search,Zerind,Pitesti,4.532000002654968e-05,4
+depth_first_search,Zerind,Pitesti,8.91000004230591e-06,7
+uniform_cost_search,Zerind,Pitesti,2.5650000088717208e-05,4
+iterative_deepening,Zerind,Pitesti,4.404000005706621e-05,4
+greedy_search,Zerind,Pitesti,0.00013991000005262322,4
+a_star_search,Zerind,Pitesti,0.00010264000002280227,4
+breadth_first_search,Zerind,Neamt,0.00010932999994111015,8
+depth_first_search,Zerind,Neamt,2.7990000171485006e-05,12
+uniform_cost_search,Zerind,Neamt,0.00014096000008976262,9
+iterative_deepening,Zerind,Neamt,0.0005516100000022561,8
+greedy_search,Zerind,Neamt,0.0001840100000208622,8
+a_star_search,Zerind,Neamt,0.00020856999999523395,9
+breadth_first_search,Zerind,Mehadia,2.935999991677818e-05,4
+depth_first_search,Zerind,Mehadia,5.500000042957254e-06,4
+uniform_cost_search,Zerind,Mehadia,2.2840000065116327e-05,4
+iterative_deepening,Zerind,Mehadia,7.341000004998933e-05,4
+greedy_search,Zerind,Mehadia,0.00011631000002125802,4
+a_star_search,Zerind,Mehadia,0.00011423999994804035,4
+breadth_first_search,Zerind,Oradea,3.8199998925847465e-06,1
+depth_first_search,Zerind,Oradea,2.1809999907418387e-05,11
+uniform_cost_search,Zerind,Oradea,3.4899999263870995e-06,1
+iterative_deepening,Zerind,Oradea,1.2759999981426517e-05,1
+greedy_search,Zerind,Oradea,2.1920000017416895e-05,1
+a_star_search,Zerind,Oradea,2.2280000075625138e-05,1
+breadth_first_search,Zerind,Iasi,5.372999994506245e-05,7
+depth_first_search,Zerind,Iasi,1.332999995611317e-05,11
+uniform_cost_search,Zerind,Iasi,7.392999991679971e-05,8
+iterative_deepening,Zerind,Iasi,0.00020326000012573786,7
+greedy_search,Zerind,Iasi,0.00013604000000668747,7
+a_star_search,Zerind,Iasi,0.000172629999997298,8
+breadth_first_search,Pitesti,Neamt,7.860999999138585e-05,5
+depth_first_search,Pitesti,Neamt,1.3409999974101084e-05,5
+uniform_cost_search,Pitesti,Neamt,5.262999993647099e-05,5
+iterative_deepening,Pitesti,Neamt,0.00010255999991386489,5
+greedy_search,Pitesti,Neamt,0.00016583000001446635,5
+a_star_search,Pitesti,Neamt,0.00019945000012739912,5
+breadth_first_search,Pitesti,Mehadia,4.486999996515806e-05,3
+depth_first_search,Pitesti,Mehadia,2.931000008175033e-05,7
+uniform_cost_search,Pitesti,Mehadia,5.27600001078099e-05,3
+iterative_deepening,Pitesti,Mehadia,6.495999996332102e-05,3
+greedy_search,Pitesti,Mehadia,9.58900000568974e-05,3
+a_star_search,Pitesti,Mehadia,8.952000011959171e-05,3
+breadth_first_search,Pitesti,Oradea,3.4680000044318146e-05,3
+depth_first_search,Pitesti,Oradea,4.00199999603501e-05,12
+uniform_cost_search,Pitesti,Oradea,4.71900000320602e-05,3
+iterative_deepening,Pitesti,Oradea,5.512000002454443e-05,3
+greedy_search,Pitesti,Oradea,0.00012013000000479223,3
+a_star_search,Pitesti,Oradea,8.270999987871618e-05,3
+breadth_first_search,Pitesti,Iasi,3.5310000112076525e-05,4
+depth_first_search,Pitesti,Iasi,1.1479999966468312e-05,4
+uniform_cost_search,Pitesti,Iasi,6.508999999823572e-05,4
+iterative_deepening,Pitesti,Iasi,0.00012087000000065018,4
+greedy_search,Pitesti,Iasi,0.00015938999995341875,4
+a_star_search,Pitesti,Iasi,0.00012427000001480337,4
+breadth_first_search,Neamt,Mehadia,6.261999997150269e-05,8
+depth_first_search,Neamt,Mehadia,2.4669999902471318e-05,8
+uniform_cost_search,Neamt,Mehadia,6.075999999666237e-05,8
+iterative_deepening,Neamt,Mehadia,0.00017477999995207938,8
+greedy_search,Neamt,Mehadia,0.0001612700000350742,8
+a_star_search,Neamt,Mehadia,0.00011655999996946775,8
+breadth_first_search,Neamt,Oradea,2.3030000056678547e-05,7
+depth_first_search,Neamt,Oradea,2.047999992100813e-05,13
+uniform_cost_search,Neamt,Oradea,3.326000010019925e-05,8
+iterative_deepening,Neamt,Oradea,6.141999997453241e-05,7
+greedy_search,Neamt,Oradea,0.00012763999993694596,7
+a_star_search,Neamt,Oradea,0.00011526999996931408,8
+breadth_first_search,Neamt,Iasi,3.3499999517516698e-06,1
+depth_first_search,Neamt,Iasi,1.950000023498433e-06,1
+uniform_cost_search,Neamt,Iasi,2.649999942150316e-06,1
+iterative_deepening,Neamt,Iasi,3.529999958118424e-06,1
+greedy_search,Neamt,Iasi,1.3989999979457935e-05,1
+a_star_search,Neamt,Iasi,1.7419999994672253e-05,1
+breadth_first_search,Mehadia,Oradea,2.4470000016663108e-05,5
+depth_first_search,Mehadia,Oradea,2.096000002893561e-05,9
+uniform_cost_search,Mehadia,Oradea,2.7000000000043655e-05,5
+iterative_deepening,Mehadia,Oradea,5.554999997912091e-05,5
+greedy_search,Mehadia,Oradea,7.968999998411163e-05,5
+a_star_search,Mehadia,Oradea,7.022999998298473e-05,5
+breadth_first_search,Mehadia,Iasi,4.2799999937415124e-05,7
+depth_first_search,Mehadia,Iasi,9.239999917554087e-06,7
+uniform_cost_search,Mehadia,Iasi,4.0110000054482955e-05,7
+iterative_deepening,Mehadia,Iasi,0.000153279999994993,7
+greedy_search,Mehadia,Iasi,0.00016033999995670455,7
+a_star_search,Mehadia,Iasi,0.0001731500000005326,7
+breadth_first_search,Oradea,Iasi,4.652000002351997e-05,6
+depth_first_search,Oradea,Iasi,8.279999974547536e-06,6
+uniform_cost_search,Oradea,Iasi,4.7049999966475295e-05,7
+iterative_deepening,Oradea,Iasi,0.00013739000005443813,6
+greedy_search,Oradea,Iasi,0.00012480999994295415,6
+a_star_search,Oradea,Iasi,0.0001552800000354182,7

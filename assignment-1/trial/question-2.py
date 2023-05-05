@@ -44,7 +44,7 @@ with open('result.csv', 'w') as res:
 
                 benchmark_result = benchmark(algorithm=algorithms[i],args=args)
 
-                res.write(f'{algorithms[i].__name__},{city_one},{city_two},{benchmark_result[0]},{benchmark_result[1]}\n')
+                res.write(f'{algorithms[i].__name__},{city_one},{city_two},{benchmark_result[0]},{benchmark_result[1]-1}\n')
 
 
     res.close()

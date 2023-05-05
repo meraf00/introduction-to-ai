@@ -1,7 +1,7 @@
 from collections import deque
 from heapq import heappop, heappush
 
-    
+
 def build_path(path_map: dict, start_node, end_node):
     path = []
 
@@ -70,7 +70,7 @@ def breadth_first_search(graph, start_node, end_node):
 
 
 def uniform_cost_search(graph, start_node, end_node):
-    path_map = {}  
+    path_map = {}
     path_cost = {}
 
     priority_queue = [(0, start_node)]
@@ -161,37 +161,37 @@ def greedy_search(graph, start_node, end_node, heuristic_func):
     estimated cost of path from `current_node` to `end_node`.
     """
 
-    # choose the best node from alternative (min of cost estimated by heuristic_func)
-    best_node = None
-    best_cost = float("inf")
+    # alias
+    h = heuristic_func
 
-    path = [start_node]
-    visited = set(path)
+    path_map = {}
+    path_cost = {}
 
-    current_node = start_node
+    priority_queue = [(h(start_node), start_node)]
 
-    while end_node not in visited:
-        for neighbour, _ in graph.neighbours(current_node):
-            if neighbour in visited:
-                continue             
+    visited = set()
 
-            estimated_cost = heuristic_func(neighbour)
+    while priority_queue:
 
-            if estimated_cost < best_cost:
-                best_cost = estimated_cost
-                best_node = neighbour
-            
-        if not best_node or best_node in visited:
-            return []
+        _, current_node = heappop(priority_queue)
+
+        if current_node == end_node:
+            return build_path(path_map, start_node, end_node)
+
+        visited.add(current_node)
         
-        path.append(best_node)
-        visited.add(best_node)
-        current_node = best_node
+        for neighbour, _ in graph.neighbours(current_node):
+            neighbour_cost = h(neighbour)
 
-    if path and path[-1] != end_node:
-        return []
-    
-    return path
+            if neighbour not in visited:
+
+                heappush(priority_queue, (neighbour_cost, neighbour))
+
+                if path_cost.get(neighbour, float("inf")) > h(neighbour):
+                    path_map[neighbour] = current_node
+                    path_cost[neighbour] = neighbour_cost
+
+    return []
 
 
 def a_star_search(graph, start_node, end_node, heuristic_func):
