@@ -1,5 +1,27 @@
 import sys
 import argparse
+import random
+
+
+def generate_items(
+    filename,
+    n_item_types: int = 10,
+    capacity: float = 50,
+    min_item_weight: float = None,
+    max_item_weight: float = None,
+    min_item_count: int = 1,
+    max_item_count: int = 5,
+):
+    min_item_weight = min_item_weight or 1
+    max_item_weight = max_item_weight or capacity
+
+    if min_item_weight > max_item_weight:
+        raise ValueError(
+            "Min item weight must be greater than or equal to Max item weight."
+        )
+
+    if min(capacity, max_item_weight, min_item_weight) < 0:
+        raise ValueError("Weight can't be negative.")
 
 
 def load_knapsack_problem(filename):
