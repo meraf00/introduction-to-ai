@@ -1,4 +1,5 @@
 50
 Item,weight,value, n_items
-Phone,0.19,1000, 5
-Laptop,1.1,700, 2
+Phone,10,60,10
+Laptop,20,100,1
+Bag,30,181,1
