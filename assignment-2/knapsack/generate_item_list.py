@@ -3,6 +3,30 @@ import string
 from typing import List
 
 
+item_names = [
+    "Phone",
+    "Laptop",
+    "TV",
+    "Shoe",
+    "Watch",
+    "Ball",
+    "Toy",
+    "Cable",
+    "Charger",
+    "Book",
+    "Headphone",
+    "Cup",
+    "Jar",
+    "Glasses",
+    "Candy",
+    "Cover",
+    "Flash",
+    "Harddisk",
+    "Pen",
+    "Pencil",
+]
+
+
 def generate_item_names(n_items):
     item_names = []
 
@@ -31,11 +55,9 @@ def generate_items(
     max_item_value: float = 100,
     min_item_count: int = 1,
     max_item_count: int = 5,
-    item_names: List[str] = None,
+    item_names: List[str] = item_names,
 ):
-    item_names = (
-        item_names[:n_item_types] if item_names else generate_item_names(n_item_types)
-    )
+    item_names = item_names[:n_item_types]
 
     items = []
 
@@ -52,28 +74,6 @@ def generate_items(
 
 
 if __name__ == "__main__":
-    item_names = [
-        "Phone",
-        "Laptop",
-        "TV",
-        "Shoe",
-        "Watch",
-        "Ball",
-        "Toy",
-        "Cable",
-        "Charger",
-        "Book",
-        "Headphone",
-        "Cup",
-        "Jar",
-        "Glasses",
-        "Candy",
-        "Cover",
-        "Flash",
-        "Harddisk",
-        "Pen",
-        "Pencil",
-    ]
-    generate_items("10_items.txt", n_item_types=10, item_names=item_names)
-    generate_items("15_items.txt", n_item_types=15, item_names=item_names)
-    generate_items("20_items.txt", n_item_types=20, item_names=item_names)
+    generate_items("10_items.txt", n_item_types=10)
+    generate_items("15_items.txt", n_item_types=15)
+    generate_items("20_items.txt", n_item_types=20)

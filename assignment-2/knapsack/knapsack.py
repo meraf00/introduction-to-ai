@@ -9,6 +9,9 @@ def load_knapsack_problem(filename: str):
     with open(filename) as f:
         lines = f.readlines()
 
+        if len(lines) < 3:
+            raise ValueError()
+
         max_weight = int(lines[0].strip())
 
         items = {
@@ -18,14 +21,20 @@ def load_knapsack_problem(filename: str):
             "counts": [],
         }
 
-        for line in lines[2:]:
-            item_name, weight, value, count = map(
-                lambda string: string.strip(), line.split(",")
-            )
-            items["names"].append(item_name)
-            items["prices"].append(float(value))
-            items["weights"].append(float(weight))
-            items["counts"].append(int(count))
+        for line_no, line in enumerate(lines[2:]):
+            try:
+                item_name, weight, value, count = map(
+                    lambda string: string.strip(), line.split(",")
+                )
+                items["names"].append(item_name)
+                items["prices"].append(float(value))
+                items["weights"].append(float(weight))
+                items["counts"].append(int(count))
+
+            except Exception as e:
+                raise ValueError(
+                    f"Parse error '{filename}' on line {line_no + 3}: '{line}'\n[{e}]"
+                )
 
         for key in items.keys():
             items[key] = np.array(items[key])
@@ -249,26 +258,24 @@ def hill_climbing(initial_state, problem, max_capacity):
 """
 
 
-def simulated_annealing(
-    initial_state, problem, max_capacity, alpha=0.1, max_iteration=200
-):
+def simulated_annealing(initial_state, problem, max_capacity, max_iteration=200):
     prices = problem["prices"]
     weights = problem["weights"]
 
     current = initial_state
-
     current_score = calculate_fitness(current, prices, weights, max_capacity)
-
-    tolerance = np.exp(alpha / max_iteration)
 
     best_state = current
     best_score = current_score
 
-    for _ in range(max_iteration):
-        possilble_nexts = next_states(current, problem, max_capacity)
-        next_state = random.choice(possilble_nexts)
+    for i in range(max_iteration):
+        possible_nexts = next_states(current, problem, max_capacity)
+        next_state = random.choice(possible_nexts)
 
         score = calculate_fitness(next_state, prices, weights, max_capacity)
+
+        delta = current_score - score
+        tolerance = np.exp(delta / (max_iteration - i))
 
         if score > current_score:
             current = next_state
@@ -314,12 +321,12 @@ if __name__ == "__main__":
             solution = genetic_algorithm(problem, initial_population, max_capacity)
 
         elif args.algorithm == "hc":
-            solution = hill_climbing([2] * len(problem["names"]), problem, max_capacity)
+            init_state = np.random.randint(2, size=len(problem["names"])).tolist()
+            solution = hill_climbing(init_state, problem, max_capacity)
 
         elif args.algorithm == "sa":
-            solution = simulated_annealing(
-                [2] * len(problem["names"]), problem, max_capacity
-            )
+            init_state = np.random.randint(2, size=len(problem["names"])).tolist()
+            solution = simulated_annealing(init_state, problem, max_capacity)
 
         fitness = calculate_fitness(
             solution, problem["prices"], problem["weights"], max_capacity
@@ -331,14 +338,14 @@ if __name__ == "__main__":
         ):
             if optimal_amount:
                 print(
-                    f"{item_name:7s} [ count:{ optimal_amount:3d} ] -> {item_value * optimal_amount:.2f} $"
+                    f"{item_name:7s} [ {optimal_amount:2d} * {item_value:.2f} $ ] -> {item_value * optimal_amount:.2f} $"
                 )
 
-        print(f"\nTotal price: {fitness} $")
+        print(f"\nTotal price: {fitness:.2f} $")
 
     except FileNotFoundError:
         print(f"Can't find file '{args.file}'")
 
-    # except ValueError as e:
-    #     print(e)
-    #     print("Unexpected file content.")
+    except ValueError as e:
+        print("Unexpected file content.")
+        print(e)
