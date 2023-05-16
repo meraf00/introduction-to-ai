@@ -32,15 +32,16 @@ def calculate_cost(chromosome, graph):
     for i in range(1, 20):
 
         city1, city2 = chromosome[i - 1], chromosome[i]
+        
+        visited.add(city1)
+        
         path_cost = get_path_cost(city1=city1, city2=city2, graph=graph)
+
         cost += path_cost
 
-        if city1 in visited:
-            cost += 10000
-        visited.add(city1)
+        if city2 in visited:
+            cost += 1000
 
-    if city2 in visited:
-        cost += 1000
 
     return cost
 
