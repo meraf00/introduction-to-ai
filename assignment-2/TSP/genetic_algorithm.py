@@ -8,7 +8,7 @@ def generate_population(cities, size):
     population = []
 
     for _ in range(size):
-        chromosome = cities
+        chromosome = cities[:]
         random.shuffle(chromosome)
         population.append(chromosome)
 
@@ -31,9 +31,10 @@ def pick_parents(population):
 
 
 def cross_over(parent1, parent2):
-    index = random.randint(1, 19)
+    index = random.randint(1, 19)    
 
     child = parent1[:index] + parent2[index:]
+    
     return child
 
 
@@ -51,6 +52,7 @@ def mutate(chromosome):
 def genetic_algorithm(cities, population_size, percent, generation, graph):
 
     population = generate_population(cities, population_size)
+    
     
     for _ in range(generation):
     
@@ -73,9 +75,9 @@ def genetic_algorithm(cities, population_size, percent, generation, graph):
                 mutate(child)
 
 
-            probability = random.uniform(0, 1)
-            if probability < 0.05:
-                mutate(population[0])
+            # probability = random.uniform(0, 1)
+            # if probability < 0.05:
+            #     mutate(population[0])
                 
 
             children.append(child)

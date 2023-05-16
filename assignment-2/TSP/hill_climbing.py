@@ -28,9 +28,7 @@ def hill_climbing(cities, graph, generation):
     bestTour = path
     bestValue = utils.calculate_cost(path, graph)
 
-    for _ in range(generation):
-
-        moved = False
+    for _ in range(generation):        
 	
         for successor in generateSuccessors(bestTour):
             successorValue = utils.calculate_cost(successor, graph=graph)
@@ -38,13 +36,10 @@ def hill_climbing(cities, graph, generation):
 			# moving uphill if successir is better than current value
             if successorValue < bestValue:
                 bestTour  = successor
-                bestValue = successorValue
-                moved = True
-                break
-                        
-        if moved == False:
-            break
-    
-    return (bestTour, bestValue)
+                bestValue = successorValue                
 
-    
+        if bestTour == path:            
+            return (bestTour, bestValue)
+        
+
+    return (bestTour, bestValue)
