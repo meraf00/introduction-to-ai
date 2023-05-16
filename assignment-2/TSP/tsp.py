@@ -3,6 +3,7 @@ from graph import UndirectedGraph
 from hill_climbing import hill_climbing
 from simulated_annealing import simulated_annealing
 from genetic_algorithm import genetic_algorithm
+import utils
 
 
 parser = argparse.ArgumentParser(description='Solve the TSP using a specified algorithm')
@@ -40,15 +41,15 @@ elif args.algorithm == 'simulated_annealing':
     tour, dist = simulated_annealing(cities=cities, graph=graph, generation=10000)
 
 else:
-    tour, dist = genetic_algorithm(cities=cities, 
+    tour, fitness = genetic_algorithm(cities=cities, 
                                    graph=graph, 
                                    population_size=150, 
                                    percent=0.7, 
-                                   generation=200)
+                                   generation=200)    
 
 
 
 
 print("Algorithm:", args.algorithm)
 print("Best tour found:", tour)
-print("Total cost:", dist)
+print("Total cost:", utils.calculate_path_distance(tour, graph))

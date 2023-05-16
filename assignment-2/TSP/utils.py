@@ -1,25 +1,66 @@
-import os
 import time
 import random
 from math import radians, cos, sqrt, asin
 from graph import *
 from heapq import heappop, heappush
 
+def build_path(path_map: dict, start_node, end_node):
+    path = []
 
-def get_path_cost(city1, city2, graph):
-    queue = []
-    heappush(queue, [0, city1, None])
-    while queue:
+    current = end_node
+    while True:
+        path.append(current)
 
-        cost, cur, parent = heappop(queue)
+        if current == start_node:
+            break
 
-        if cur == city2:
-            return cost
+        current = path_map[current]
 
-        for neighbour in graph.neighbours(cur):
-            if neighbour[0] != parent:
-                new_cost = neighbour[1]
-                heappush(queue, ([cost + new_cost, neighbour[0], cur]))
+    path.reverse()
+
+    return path
+
+
+def uniform_cost_search(start_node, end_node, graph):
+    path_map = {}
+    path_cost = {}
+
+    priority_queue = [(0, start_node)]
+
+    visited = set()
+
+    while priority_queue:
+        cost, current_node = heappop(priority_queue)
+
+        if current_node == end_node:
+            return cost, build_path(path_map, start_node, end_node)
+
+        visited.add(current_node)
+
+        for neighbour, weight in graph.neighbours(current_node):
+            if neighbour not in visited:
+                heappush(priority_queue, (cost + weight, neighbour))
+
+                if path_cost.get(neighbour, float("inf")) > cost + weight:
+                    path_map[neighbour] = current_node
+                    path_cost[neighbour] = cost + weight
+
+    return float("inf"), []
+
+
+def build_full_path(chromosome, graph):
+    
+    total_path = []
+
+    for i in range(1, len(chromosome)):
+        city1, city2 = chromosome[i - 1], chromosome[i]
+
+        path_cost, path = uniform_cost_search(city1, city2, graph=graph)
+
+        total_path.extend(path)
+        total_path.pop()
+
+    return total_path
 
 
 
@@ -29,19 +70,34 @@ def calculate_cost(chromosome, graph):
     visited = set()
 
 
-    for i in range(1, 20):
+    for i in range(1, len(chromosome)):
 
-        city1, city2 = chromosome[i - 1], chromosome[i]
+        city1, city2 = chromosome[i - 1], chromosome[i]        
         
-        visited.add(city1)
-        
-        path_cost = get_path_cost(city1=city1, city2=city2, graph=graph)
+        path_cost, path = uniform_cost_search(city1, city2, graph=graph)           
 
         cost += path_cost
 
-        if city2 in visited:
-            cost += 1000
+        for city in path[1:]:
+            if city in visited:
+                cost += 1000
+        
+        visited.update(path)
+    
+    cost += abs(len(graph.nodes) - len(visited)) * 6000
 
+    return cost
+
+def calculate_path_distance(path, graph):
+    cost = 0
+    
+    for i in range(1, len(path)):
+
+        city1, city2 = path[i - 1], path[i]        
+        
+        path_cost, _ = uniform_cost_search(city1, city2, graph=graph)           
+
+        cost += path_cost    
 
     return cost
 
