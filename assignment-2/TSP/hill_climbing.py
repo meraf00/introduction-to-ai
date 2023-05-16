@@ -40,7 +40,6 @@ def hill_climbing(cities, graph, generation):
                 bestTour  = successor
                 bestValue = successorValue
                 moved = True
-                break
                         
         if moved == False:
             break

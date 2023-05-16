@@ -8,7 +8,7 @@ def generate_population(cities, size):
     population = []
 
     for _ in range(size):
-        chromosome = cities
+        chromosome = cities.copy()
         random.shuffle(chromosome)
         population.append(chromosome)
 
