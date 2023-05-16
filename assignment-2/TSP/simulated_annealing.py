@@ -50,7 +50,7 @@ def simulated_annealing(cities, graph, generation):
                   worstValue = successorValue
                         
 
-        if decreasing_probability(i, 1, 0.1) > 0.4:
+        if random.uniform(0, 1) < decreasing_probability(i, 1, 0.1):
               bestTour = worstTour
               bestValue = worstValue
 
