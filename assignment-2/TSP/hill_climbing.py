@@ -22,29 +22,52 @@ def get_neighbours(state):
     return neighbours
 
 
+def generateSuccessors(tour):
+	N = len(tour)        
+	
+	# generate 2 random sequences
+	randomSequence1 = list(range(N))
+	random.shuffle(randomSequence1)
+	randomSequence2 = list(range(N))
+	random.shuffle(randomSequence2)
+	
+	# this generates all successors of the initial tour and yields them    
+	for i in randomSequence1:
+		for j in randomSequence2:
+			
+			#to avoid swapping same pair twice
+			if i<j:
+				temp = list(tour)
+				temp[i],temp[j] = tour[j],tour[i]
+				yield temp
+
 def hill_climbing(cities, generation):
     path = cities
     random.shuffle(path)
 
-    best_path = path
-    best_cost = utils.calculate_cost(path, graph)
+    bestTour = path
+    bestValue = utils.calculate_cost(path, graph)
 
     for _ in range(generation):
 
-        neighbours = get_neighbours(path)
-        neighbours_cost = [utils.calculate_cost(neighbour, graph) for neighbour in neighbours]
-        no_better = True
-        for i in range(len(neighbours)):
-            if neighbours_cost[i] < best_cost:
-                best_path = neighbours[i]
-                best_cost = neighbours_cost[i]
-
-                no_better = False
-
-        if no_better:
+        moved = False
+	
+        for successor in generateSuccessors(bestTour):
+            successorValue = utils.calculate_cost(successor, graph=graph)
+            print(successor, successorValue)
+			
+			# moving uphill if successir is better than current value
+            if successorValue < bestValue:
+                bestTour  = successor
+                bestValue = successorValue
+                moved = True
+                break
+                        
+        if moved == False:
             break
     
-    return best_path, best_cost
+    return (bestTour, bestValue)
+    # return best_path, best_cost
 
 best_path, best_cost = hill_climbing(cities=utils.cities, generation=100)
 print(best_path, best_cost)
