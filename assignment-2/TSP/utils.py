@@ -3,27 +3,7 @@ import time
 import random
 from math import radians, cos, sqrt, asin
 from graph import *
-from heapq import heapify, heappop, heappush
-
-cities = ['Oradea', 'Zerind', 'Arad', 'Timisoara', 'Lugoj', 'Mehadia', 'Drobeta', 'Craiova', 'Sibiu', 'Rimnicu Vilcea',
-          'Fagaras', 'Pitesti', 'Giurgiu', 'Bucharest', 'Urziceni', 'Eforie', 'Hirsova', 'Vaslui', 'Iasi', 'Neamt']
-
-def load_coords():
-
-    romania_coord = os.path.join(os.path.dirname(
-        __file__), "romania-data/romania-coords.txt")
-
-    city_coords = {}
-
-    with open(romania_coord) as file:
-        for line in file.readlines()[1:]:
-            city, lat, long = line.split("    ")
-            lat = float(lat)
-            long = float(long)
-
-            city_coords[city] = [lat, long]
-
-    return city_coords
+from heapq import heappop, heappush
 
 
 def get_path_cost(city1, city2, graph):
@@ -48,7 +28,7 @@ def calculate_cost(chromosome, graph):
     cost = 0
     visited = set()
 
-    
+
     for i in range(1, 20):
 
         city1, city2 = chromosome[i - 1], chromosome[i]
@@ -65,55 +45,6 @@ def calculate_cost(chromosome, graph):
 
     return cost
 
-
-def load_city_graph(distance_unit="miles"):
-    romania_file = os.path.join(os.path.dirname(
-        __file__), "romania-data/romania-road-distance.txt")
-
-    graph = UndirectedGraph()
-
-    with open(romania_file) as file:
-        for line in file.readlines()[1:]:
-            city_1, city_2, distance = line.split("    ")
-
-            distance = int(distance)
-
-            if distance_unit == "km":
-                distance *= 1.60934
-
-            graph.add_edge(city_1, city_2, distance)
-
-    return graph
-
-
-def romania_coord_distance_km(city_1, city_2):
-    """Returns the straight line distance in kilometers between two cities."""
-
-    coord = load_coords()
-
-    lat1, lon1 = map(radians, coord[city_1])
-    lat2, lon2 = map(radians, coord[city_2])
-
-    a = 0.5 - cos((lat2-lat1))/2 + cos(lat1) * \
-        cos(lat2) * (1-cos((lon2-lon1)))/2
-    return 12742 * asin(sqrt(a))  # 2*R*asin...
-
-
-# def calculate_cost(graph, path):
-#     if not path:
-#         return float("inf")
-
-#     cost = 0
-
-#     for i in range(len(path) - 1):
-#         node = path[i]
-
-#         for neighbour, weight in graph.graph[node]:
-#             if neighbour == path[i + 1]:
-#                 cost += weight
-#                 break
-
-#     return cost
 
 
 def benchmark(algorithm, args, run_n_times=10):

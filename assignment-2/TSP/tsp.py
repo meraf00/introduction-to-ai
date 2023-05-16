@@ -1,12 +1,10 @@
 import argparse
 from graph import UndirectedGraph
-from collections import defaultdict
 from hill_climbing import hill_climbing
-# from simulated_annealing import simulated_annealing
+from simulated_annealing import simulated_annealing
 from genetic_algorithm import genetic_algorithm
 
 
-# Define the command-line arguments
 parser = argparse.ArgumentParser(description='Solve the TSP using a specified algorithm')
 parser.add_argument('--algorithm', type=str, choices=['hc', 'sa', 'ga'], default='hc',
                     help='the algorithm to use (default: hc)')
@@ -38,8 +36,8 @@ with open(args.file) as file:
 if args.algorithm == 'hc':
     tour, dist = hill_climbing(cities=cities, graph=graph, generation=100)
 
-# elif args.algorithm == 'simulated_annealing':
-#     tour, dist = simulated_annealing(cities, max_iter=10000)
+elif args.algorithm == 'simulated_annealing':
+    tour, dist = simulated_annealing(cities=cities, graph=graph, generation=10000)
 
 else:
     tour, dist = genetic_algorithm(cities=cities, 
@@ -53,4 +51,4 @@ else:
 
 print("Algorithm:", args.algorithm)
 print("Best tour found:", tour)
-print("Total distance:", dist)
+print("Total cost:", dist)
