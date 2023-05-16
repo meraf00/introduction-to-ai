@@ -4,9 +4,6 @@ from collections import deque
 
 
 
-graph = utils.load_city_graph()
-
-
 def generate_population(cities, size):
     population = []
 
@@ -19,7 +16,7 @@ def generate_population(cities, size):
 
 
 
-def sort_population(population):
+def sort_population(population, graph):
     population.sort(key=lambda i: utils.calculate_cost(i, graph=graph))
 
     return population
@@ -51,13 +48,14 @@ def mutate(chromosome):
 
 
 
-def genetic_algorithm(population, percent, generation):
+def genetic_algorithm(cities, population_size, percent, generation, graph):
+
+    population = generate_population(cities, population_size)
     
     for _ in range(generation):
     
     
-        population = sort_population(population)
-        print(population[0], utils.calculate_cost(population[0], graph=graph))
+        population = sort_population(population, graph=graph)
         amount = int(len(population) * percent)
         left = len(population) - amount
 
@@ -84,14 +82,15 @@ def genetic_algorithm(population, percent, generation):
 
         population += children
 
-    sort_population(population)
+    sort_population(population, graph=graph)
 
-    return population[0]
+    path = population[0]
+    cost = utils.calculate_cost(population[0], graph)
+
+    return path, cost
 
 
-population = generate_population(utils.cities, 2000)
-path = genetic_algorithm(population=population, percent=0.7, generation=300)
-print(path, utils.calculate_cost(path, graph=graph))
+
 
 
 

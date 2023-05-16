@@ -1,4 +1,10 @@
 import argparse
+from graph import UndirectedGraph
+from collections import defaultdict
+from hill_climbing import hill_climbing
+# from simulated_annealing import simulated_annealing
+from genetic_algorithm import genetic_algorithm
+
 
 # Define the command-line arguments
 parser = argparse.ArgumentParser(description='Solve the TSP using a specified algorithm')
@@ -7,29 +13,44 @@ parser.add_argument('--algorithm', type=str, choices=['hill_climbing', 'simulate
 parser.add_argument('--file', type=str, required=True,
                     help='the path to the file containing the TSP data')
 
-# Parse the command-line arguments
-args = parser.parse_args()
 
-# Load the TSP data from the file
-with open(args.file, 'r') as f:
-    cities = []
-    for line in f:
-        x, y = map(float, line.split())
-        cities.append((x, y))
+args = parser.parse_args()
+graph = UndirectedGraph()
+
+
+with open(args.file) as file:
+    cities = set()
+    for line in file.readlines()[1:]:
+        city_1, city_2, distance = line.split("    ")
+
+        distance = int(distance)
+
+
+        graph.add_edge(city_1, city_2, distance)
+        cities.add(city_1)
+        cities.add(city_2)
+
+    cities = list(cities)
+
+
 
 # Solve the TSP using the specified algorithm
 if args.algorithm == 'hill_climbing':
-    from hill_climbing import hill_climbing
-    tour, dist = hill_climbing(cities, max_iter=1000)
-elif args.algorithm == 'simulated_annealing':
-    from simulated_annealing import simulated_annealing
-    tour, dist = simulated_annealing(cities, init_temp=1000, cooling_rate=0.99, max_iter=10000)
-else:
-    from genetic_algorithm import genetic_algorithm
-    tour, dist = genetic_algorithm(cities, pop_size=50, elite_size=10, mutation_rate=0.01, max_iter=100)
+    tour, dist = hill_climbing(cities=cities, graph=graph, generation=1000)
 
-# Print the results
+# elif args.algorithm == 'simulated_annealing':
+#     tour, dist = simulated_annealing(cities, max_iter=10000)
+
+else:
+    tour, dist = genetic_algorithm(cities=cities, 
+                                   graph=graph, 
+                                   population_size=100, 
+                                   percent=0.7, 
+                                   generation=100)
+
+
+
+
 print("Algorithm:", args.algorithm)
-print("File:", args.file)
 print("Best tour found:", tour)
 print("Total distance:", dist)
