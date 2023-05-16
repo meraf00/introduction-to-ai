@@ -5,7 +5,7 @@ import time
 import numpy as np
 
 
-def test_hill_climbing(problem, max_capacity, n_iters=10):
+def test_hill_climbing(problem, max_capacity, n_iters=15):
     best_solution = None
     best_solution_score = float("-inf")
 
@@ -34,7 +34,7 @@ def test_hill_climbing(problem, max_capacity, n_iters=10):
     return average_runtime, best_solution, best_solution_score
 
 
-def test_simulated_annealing(problem, max_capacity, n_iters=10):
+def test_simulated_annealing(problem, max_capacity, n_iters=15):
     best_solution = None
     best_solution_score = float("-inf")
 
@@ -63,7 +63,7 @@ def test_simulated_annealing(problem, max_capacity, n_iters=10):
     return average_runtime, best_solution, best_solution_score
 
 
-def test_genetic_algorithm(problem, max_capacity, n_iters=10):
+def test_genetic_algorithm(problem, max_capacity, n_iters=15):
     best_solution = None
     best_solution_score = float("-inf")
 
@@ -108,9 +108,11 @@ def test():
         sa_time, _, sa_score = test_simulated_annealing(problem, max_capacity)
         ga_time, _, ga_score = test_genetic_algorithm(problem, max_capacity)
 
-        print(hc_time, hc_score)
-        print(sa_time, sa_score)
-        print(ga_time, ga_score)
+        print("%20s    Time(s)   Value" % "Algorithm")
+        print("=============================================")
+        print("%20s    %.2f s   %.2f $" % ("Hill climbing", hc_time, hc_score))
+        print("%20s    %.2f s   %.2f $" % ("Simulated annealing", sa_time, sa_score))
+        print("%20s    %.2f s   %.2f $" % ("Genetic algorithm", ga_time, ga_score))
         print()
 
 
