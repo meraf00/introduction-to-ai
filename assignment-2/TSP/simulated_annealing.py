@@ -1,6 +1,6 @@
 import utils
 import random
-
+import math
 
 def generateSuccessors(tour):
 	N = len(tour)        
@@ -21,14 +21,19 @@ def generateSuccessors(tour):
 				yield temp
 
 
-def hill_climbing(cities, graph, generation):
+def decreasing_probability(current_time, initial_prob, decay_rate):
+    prob = initial_prob * math.exp(-decay_rate * current_time)
+    return prob
+
+
+def simulated_annealing(cities, graph, generation):
     path = cities
     random.shuffle(path)
 
-    bestTour = path
-    bestValue = utils.calculate_cost(path, graph)
+    bestTour =  worstTour = path
+    bestValue = worstValue = utils.calculate_cost(path, graph)
 
-    for _ in range(generation):
+    for i in range(generation):
 
         moved = False
 	
@@ -40,10 +45,17 @@ def hill_climbing(cities, graph, generation):
                 bestValue = successorValue
                 moved = True
                 break
+            else:
+                  worstTour = successor
+                  worstValue = successorValue
                         
+
+        if decreasing_probability(i, 1, 0.1) > 0.4:
+              bestTour = worstTour
+              bestValue = worstValue
+
         if moved == False:
             break
-    
     return (bestTour, bestValue)
 
     
