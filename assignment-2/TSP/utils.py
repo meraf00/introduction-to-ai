@@ -129,5 +129,3 @@ def benchmark(algorithm, args, run_n_times=10):
         solution_length = len(solution)
 
     return (mean_run_time / run_n_times, solution_length)
-
-
