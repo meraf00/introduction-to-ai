@@ -3,7 +3,10 @@ import time
 import random
 from math import radians, cos, sqrt, asin
 from graph import *
+from heapq import heapify, heappop, heappush
 
+cities = ['Oradea', 'Zerind', 'Arad', 'Timisoara', 'Lugoj', 'Mehadia', 'Drobeta', 'Craiova', 'Sibiu', 'Rimnicu Vilcea',
+          'Fagaras', 'Pitesti', 'Giurgiu', 'Bucharest', 'Urziceni', 'Eforie', 'Hirsova', 'Vaslui', 'Iasi', 'Neamt']
 
 def load_coords():
 
@@ -21,6 +24,45 @@ def load_coords():
             city_coords[city] = [lat, long]
 
     return city_coords
+
+
+def get_path_cost(city1, city2, graph):
+    queue = []
+    heappush(queue, [0, city1, None])
+    while queue:
+
+        cost, cur, parent = heappop(queue)
+
+        if cur == city2:
+            return cost
+
+        for neighbour in graph.neighbours(cur):
+            if neighbour[0] != parent:
+                new_cost = neighbour[1]
+                heappush(queue, ([cost + new_cost, neighbour[0], cur]))
+
+
+
+def calculate_cost(chromosome, graph):
+
+    cost = 0
+    visited = set()
+
+    
+    for i in range(1, 20):
+
+        city1, city2 = chromosome[i - 1], chromosome[i]
+        path_cost = get_path_cost(city1=city1, city2=city2, graph=graph)
+        cost += path_cost
+
+        if city1 in visited:
+            cost += 10000
+        visited.add(city1)
+
+    if city2 in visited:
+        cost += 1000
+
+    return cost
 
 
 def load_city_graph(distance_unit="miles"):
@@ -56,21 +98,21 @@ def romania_coord_distance_km(city_1, city_2):
     return 12742 * asin(sqrt(a))  # 2*R*asin...
 
 
-def calculate_cost(graph, path):
-    if not path:
-        return float("inf")
+# def calculate_cost(graph, path):
+#     if not path:
+#         return float("inf")
 
-    cost = 0
+#     cost = 0
 
-    for i in range(len(path) - 1):
-        node = path[i]
+#     for i in range(len(path) - 1):
+#         node = path[i]
 
-        for neighbour, weight in graph.graph[node]:
-            if neighbour == path[i + 1]:
-                cost += weight
-                break
+#         for neighbour, weight in graph.graph[node]:
+#             if neighbour == path[i + 1]:
+#                 cost += weight
+#                 break
 
-    return cost
+#     return cost
 
 
 def generate_graph(n_nodes: int, edge_probability: float, min_weight: float, max_weight: float, allow_edge_loop: bool = False) -> UndirectedGraph:
@@ -175,3 +217,5 @@ def benchmark(algorithm, args, run_n_times=10):
         solution_length = len(solution)
 
     return (mean_run_time / run_n_times, solution_length)
+
+
